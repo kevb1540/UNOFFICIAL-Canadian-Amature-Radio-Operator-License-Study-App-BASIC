@@ -13,21 +13,15 @@ jobs:
       - uses: actions/checkout@v4
         with:
           persist-credentials: true
-      - name: Import complete source from original repository
+      - name: Import Android project from original repository
         run: |
           git clone --depth 1 https://github.com/kevb1540/canadian_amateur_radio_guide.git /tmp/radio-source
           test -f /tmp/radio-source/app/build.gradle
-          rsync -a --exclude='.git' --exclude='.github/workflows/import-app.yml' --exclude='android_development/debug.keystore' /tmp/radio-source/ ./
+          rsync -a --exclude='.git/' --exclude='.github/' --exclude='android_development/debug.keystore' /tmp/radio-source/ ./
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
           git add -A
           if ! git diff --cached --quiet; then
-            git commit -m 'Import complete Canadian Amateur Radio Study Guide source'
+            git commit -m 'Import Android source for Canadian Amateur Radio Study Guide v2.3.45'
             git push origin HEAD:main
           fi
-
-# Import requested for main branch on 2026-11-06
-
-# Retry source import 2026-11-06
-
-# Source copy requested 2026-11-06
