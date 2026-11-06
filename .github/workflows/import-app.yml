@@ -1,0 +1,31 @@
+name: Import Canadian Radio Study App
+on:
+  push:
+    paths:
+      - '.github/workflows/import-app.yml'
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  import-and-build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+      - name: Fetch complete app source
+        run: |
+          git clone --depth 1 https://github.com/kevb1540/canadian_amateur_radio_guide.git /tmp/radio-source
+          test -f /tmp/radio-source/app/build.gradle
+          cp -a /tmp/radio-source/. ./
+          rm -rf .git
+          git init
+          git branch -M main
+          git remote add origin https://github.com/${{ github.repository }}.git
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add -A
+          git commit -m 'Import complete Canadian Radio Study Guide v2.3.45'
+          git -c http.extraheader="AUTHORIZATION: basic $(printf 'x-access-token:%s' "$GH_TOKEN" | base64 -w0)" push --force origin main
+        env:
+          GH_TOKEN: ${{ github.token }}
