@@ -6,8 +6,8 @@ android {
         applicationId 'ca.kevin.maplewave'
         minSdk 26
         targetSdk 36
-        versionCode 276
-        versionName '2.3.46'
+        versionCode 277
+        versionName '2.3.47'
     }
     signingConfigs {
         development {
@@ -17,6 +17,23 @@ android {
             keyPassword 'android'
         }
     }
-    buildTypes { debug { signingConfig signingConfigs.development } }
+    if (System.getenv('RADIO_RELEASE_KEYSTORE') != null) {
+        signingConfigs {
+            releaseKey {
+                storeFile file(System.getenv('RADIO_RELEASE_KEYSTORE'))
+                storePassword System.getenv('RADIO_RELEASE_STORE_PASSWORD')
+                keyAlias System.getenv('RADIO_RELEASE_KEY_ALIAS')
+                keyPassword System.getenv('RADIO_RELEASE_KEY_PASSWORD')
+            }
+        }
+    }
+    buildTypes {
+        debug { signingConfig signingConfigs.development }
+        release {
+            if (System.getenv('RADIO_RELEASE_KEYSTORE') != null) {
+                signingConfig signingConfigs.releaseKey
+            }
+        }
+    }
     compileOptions { sourceCompatibility JavaVersion.VERSION_1_8; targetCompatibility JavaVersion.VERSION_1_8 }
 }
