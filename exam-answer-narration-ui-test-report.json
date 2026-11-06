@@ -1,0 +1,17 @@
+{
+  "passed": 8,
+  "checks": [
+    "Read lesson includes collapsed exam answers and says Answer. before each answer without revealing them",
+    "revealing an answer does not duplicate its cue or answer in narration",
+    "false-statement questions retain their warning and explanation after the Answer. cue",
+    "collapsed worked answers include the answer and calculation explanation",
+    "the answer exception excludes unrelated hidden text, hidden sections and collapsed details",
+    "visible answer highlighting and selection offsets remain correct across inline and saved-highlight nodes",
+    "all 984 official exam examples include exactly one Answer. cue and their answer while collapsed",
+    "No JavaScript errors."
+  ],
+  "errors": [],
+  "official_exam_examples_checked": 984,
+  "physical_audio_tested": false,
+  "time": "2026-10-30T10:47:19.108Z"
+}

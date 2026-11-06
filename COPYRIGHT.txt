@@ -1,0 +1,48 @@
+©️ Kevin W. Brown 2026
+
+Canadian Amature Radio Unofficial Basic Certificate Study Guide And Reference
+
+All rights reserved in the original application code and independently written
+teaching material. The copyright notice identifies the original application's
+owner; it does not transfer ownership of third-party material.
+
+Official ISED question bank:
+Basic Qualification Question Bank for Amateur Radio Operator Certificate
+Examinations, Innovation, Science and Economic Development Canada (ISED).
+Effective 15 July 2025. Retrieved 14 October 2026. Verified 24 October 2026.
+
+Copyright owner: Government of Canada (Crown copyright).
+Author and publisher: Innovation, Science and Economic Development Canada.
+
+This reproduction is a copy of the version available at
+https://apc-cap.ic.gc.ca/datafiles/amat_basic_quest.zip.
+
+The official English and French question and answer wording is reproduced for
+non-commercial study, with answer positions randomized. All 984 questions and
+answer keys were compared with the official download on 24 October 2026; no
+differences were found and the recorded source SHA-256 matched. Government of Canada retains rights
+in its material, subject to the original source notices.
+The app is independent and is not produced or endorsed by ISED.
+
+Original downloadable source:
+https://ised-isde.canada.ca/site/amateur-radio-operator-certificate-services/en/downloads
+https://apc-cap.ic.gc.ca/datafiles/amat_basic_quest.zip
+
+Reproduction terms:
+https://ised-isde.canada.ca/site/ised/en/terms-and-conditions
+
+Government references are credited to ISED, Department of Justice Canada and
+Health Canada. Manufacturer references are credited to Retevis, KENWOOD and
+Icom Inc.; the Retevis RT95 manual is hosted by the RadioManual.info mirror.
+Third-party material and trademarks retain their respective rights.
+
+The in-app "References & question-bank attribution" page lists every reference
+publisher and original source URL. The complete source catalogue is stored in
+app/src/main/assets/course.json (sources and glossary_sources).
+
+Complete government material titles, available institutional authors, source
+editions, original URLs and individual copy-of-version notices are also listed
+in GOVERNMENT_SOURCES.md. The app's authored lessons and simulations are original
+study summaries, rather than copies of the complete government documents.
+See government-source-verification.json for the recorded accuracy checks and
+scripts/verify_government_sources.py for the repeatable live comparison.

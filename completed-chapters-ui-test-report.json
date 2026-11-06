@@ -1,0 +1,19 @@
+{
+  "passed": 11,
+  "checks": [
+    "Tests offers the new option with a disabled start and a Learn link until a chapter is marked complete",
+    "marking one chapter complete unlocks an eight-question test and lists its chapter",
+    "three completed chapters create 24 unique questions with exactly eight per completed chapter",
+    "Save & leave and reopening the app preserve the exact test, chosen answer, flag and question position",
+    "starting another completed-chapters test keeps the existing replacement confirmation and cancellation",
+    "submission saves the correct 24-question grade and history label without changing completion marks or chapter badges",
+    "Try another test repeats the saved chapter set while the Tests option includes newly completed chapters",
+    "all twelve completed chapters give 96 unique questions including eight cumulative review questions",
+    "Help explains the new test and the card fits phone, landscape and tablet sizes in dark and light themes",
+    "a different profile starts with no completed chapters and the original profile keeps its own test history",
+    "No JavaScript errors."
+  ],
+  "errors": [],
+  "physical_android_tested": false,
+  "time": "2026-10-30T10:46:23.188Z"
+}

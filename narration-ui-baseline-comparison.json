@@ -1,0 +1,12 @@
+{
+  "checked_on": "2026-10-28",
+  "current_version": "2.3.36",
+  "baseline_source": "2.3.35",
+  "baseline_unmodified": true,
+  "same_failure_reproduced": true,
+  "failure": "Timeout at tests/narration-ui.test.cjs:85 while waiting for a single highlight mark containing Contact. The fixture splits Contact across inline elements.",
+  "baseline_checks_completed_before_timeout": 9,
+  "narration_ui_test_in_deliverable": "Byte-identical to the supplied source test; exploratory test changes were reverted.",
+  "focused_voice_and_settings_checks_passed": 81,
+  "physical_audio_tested": false
+}

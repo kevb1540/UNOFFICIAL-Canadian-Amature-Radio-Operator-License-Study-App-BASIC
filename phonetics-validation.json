@@ -1,0 +1,9 @@
+{
+  "version": "2.3.24",
+  "wav_files": 26,
+  "core_and_sound_tests_passed": 35,
+  "phonetic_module_test_passed": true,
+  "browser_ui_test": "Not run: browser unavailable and download failed",
+  "physical_device_tested": false,
+  "apk_built": false
+}

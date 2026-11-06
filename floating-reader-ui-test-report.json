@@ -1,0 +1,17 @@
+{
+  "passed": 8,
+  "checks": [
+    "the floating control is hidden until speech starts and is absent from the signed-out screen",
+    "reading exposes an accessible pause button fixed near the top left while the lesson scrolls",
+    "the floating pause/play button stays available, resumes at the spoken word and syncs with inline controls",
+    "opacity is exactly 70 percent over text and returns to full opacity over empty space",
+    "the fixed control fits phones, landscape and tablets and follows the selected light/dark theme",
+    "completion, engine errors, navigation and background cancellation hide the control and ignore stale events",
+    "voice preview supports floating pause/play and signing out clears the control without changing progress",
+    "No JavaScript errors."
+  ],
+  "errors": [],
+  "physical_audio_tested": false,
+  "opacity_over_text": 0.7,
+  "time": "2026-10-30T10:47:16.835Z"
+}

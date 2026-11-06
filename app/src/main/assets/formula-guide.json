@@ -1,0 +1,1516 @@
+{
+  "version": 1,
+  "copyright": "©️ Kevin W. Brown 2026",
+  "notation": {
+    "equals": [
+      "=",
+      "Equals sign",
+      "The quantities on both sides have the same value."
+    ],
+    "approx": [
+      "≈",
+      "Approximately equal to",
+      "A useful estimate or rounded value; it is not an exact equality."
+    ],
+    "multiply": [
+      "× or adjacent letters",
+      "Multiplication",
+      "Multiply the factors. IR means I × R; 2πfL means 2 × π × f × L."
+    ],
+    "divide": [
+      "/",
+      "Division or fraction bar",
+      "Divide the numerator by the whole denominator. Keep a denominator with several factors in parentheses."
+    ],
+    "plus": [
+      "+",
+      "Plus sign",
+      "Add the quantities."
+    ],
+    "minus": [
+      "−",
+      "Minus sign",
+      "Subtract the quantity that follows. A leading minus sign indicates a negative value."
+    ],
+    "square": [
+      "²",
+      "Squared",
+      "Multiply a quantity by itself. V² means V × V, not V × 2."
+    ],
+    "sqrt": [
+      "√",
+      "Square root",
+      "The nonnegative number whose square is the value under the root. √(LC) covers the entire product L × C."
+    ],
+    "pi": [
+      "π",
+      "Pi",
+      "The Greek letter pi is the constant 3.14159265…; 2π is about 6.283185. It converts cycles to radians in these AC formulas."
+    ],
+    "lambda": [
+      "λ",
+      "Lambda",
+      "The lower-case Greek letter lambda represents wavelength in this formula."
+    ],
+    "gamma": [
+      "Γ",
+      "Capital gamma",
+      "The upper-case Greek letter gamma represents the voltage-wave reflection coefficient. Its magnitude is |Γ|."
+    ],
+    "delta": [
+      "Δ",
+      "Capital delta",
+      "The upper-case Greek letter delta means a change or deviation. Δf is peak frequency deviation from the carrier."
+    ],
+    "abs": [
+      "| |",
+      "Absolute value or magnitude bars",
+      "Use the nonnegative magnitude inside the bars. These bars do not mean division."
+    ],
+    "log": [
+      "log₁₀",
+      "Base-ten logarithm",
+      "The power to which 10 must be raised to obtain the argument. log₁₀(100) = 2; use the calculator log key, not ln."
+    ],
+    "power": [
+      "10^(x)",
+      "Power of ten or antilogarithm",
+      "Raise 10 to the entire exponent x. This undoes log₁₀. The ^ notation here means an exponent."
+    ],
+    "subscript": [
+      "ₜ, ₀, ₁, ₂, ₙ, ₗ, ꜀, ₘ",
+      "Subscripts",
+      "Small labels identify a total, a reference, a component or a numbered quantity. They are not multiplication or powers; each variable below explains its label."
+    ],
+    "ellipsis": [
+      "…",
+      "Ellipsis",
+      "Continue the same pattern for the remaining components."
+    ],
+    "group": [
+      "( ) and [ ]",
+      "Parentheses and brackets",
+      "Group operations. Complete the grouped calculation before applying an outside factor, root or reciprocal. Units in parentheses label the required units."
+    ],
+    "omega": [
+      "Ω",
+      "Capital omega; ohm unit symbol",
+      "The Greek letter omega is used as the unit symbol for resistance and reactance. One ohm is one volt per ampere."
+    ],
+    "micro": [
+      "µ or μ",
+      "Micro prefix; Greek mu",
+      "One millionth (10⁻⁶) of a unit. For example, 1 µH = 0.000001 H."
+    ],
+    "ratio": [
+      ":",
+      "Ratio colon",
+      "2:1 reads two to one. In the algebra, use the numerical SWR value 2."
+    ]
+  },
+  "references": {
+    "ac": {
+      "title": "OpenStax — Simple AC circuits",
+      "publisher": "OpenStax, Rice University",
+      "url": "https://openstax.org/books/university-physics-volume-2/pages/15-2-simple-ac-circuits"
+    },
+    "lc": {
+      "title": "OpenStax — Resonance in an AC circuit",
+      "publisher": "OpenStax, Rice University",
+      "url": "https://openstax.org/books/university-physics-volume-2/pages/15-5-resonance-in-an-ac-circuit"
+    },
+    "dipole": {
+      "title": "ARRL — Single-band dipoles",
+      "publisher": "American Radio Relay League (ARRL)",
+      "url": "https://www.arrl.org/single-band-dipoles"
+    },
+    "swr": {
+      "title": "Rohde & Schwarz — VSWR and return loss",
+      "publisher": "Rohde & Schwarz",
+      "url": "https://www.rohde-schwarz.com/au/products/test-and-measurement/essentials-test-equipment/spectrum-analyzers/voltage-standing-wave-ratio-vswr-and-return-loss_258140.html"
+    },
+    "db": {
+      "title": "Rohde & Schwarz — RF fundamentals: dB and signal levels",
+      "publisher": "Rohde & Schwarz",
+      "url": "https://cdn.rohde-schwarz.com/ymkt/na/content/RF_fundamentals_seminar_materials/2_RF_Fun_-_T-Lines_dB_review_Signal_Levels.pdf"
+    },
+    "fm": {
+      "title": "FM Systems — Carson’s rule and FM bandwidth",
+      "publisher": "FM Systems, Inc.",
+      "url": "https://www.fmsystems-inc.com/carsons-rule-calculating-fm-modulation-bandwidth/"
+    },
+    "gain": {
+      "title": "Digi — Antenna gain: dBi versus dBd",
+      "publisher": "Digi International",
+      "url": "https://www.digi.com/support/knowledge-base/antenna-gain-dbi-vs-dbd-decibel-detail"
+    }
+  },
+  "formulas": [
+    {
+      "id": "ohms-law",
+      "title": "Ohm’s law",
+      "definition": "Ohm’s law relates the voltage across an ohmic resistance to the current through it. At a fixed resistance, doubling the voltage doubles the current; at a fixed voltage, doubling the resistance halves the current.",
+      "variables": [
+        {
+          "symbol": "V",
+          "name": "Voltage or potential difference",
+          "unit": "volt (V)",
+          "meaning": "The electrical potential difference across the resistance. A symbol V in the equation is a variable; V after a number is the unit volt."
+        },
+        {
+          "symbol": "I",
+          "name": "Electric current",
+          "unit": "ampere (A)",
+          "meaning": "The rate of electric charge flow through the resistance. Read I as current, not the digit 1."
+        },
+        {
+          "symbol": "R",
+          "name": "Resistance",
+          "unit": "ohm (Ω)",
+          "meaning": "How strongly the component opposes current in this resistive model."
+        }
+      ],
+      "symbols": [
+        "equals",
+        "multiply",
+        "divide",
+        "omega"
+      ],
+      "rearrangements": [
+        {
+          "target": "V — voltage",
+          "equation": "V = I × R",
+          "steps": [
+            "Multiply the current by the resistance."
+          ]
+        },
+        {
+          "target": "I — current",
+          "equation": "I = V / R",
+          "steps": [
+            "Start with V = I × R. Divide both sides by R; R must be nonzero."
+          ]
+        },
+        {
+          "target": "R — resistance",
+          "equation": "R = V / I",
+          "steps": [
+            "Divide both sides of V = I × R by I; I must be nonzero."
+          ]
+        }
+      ],
+      "example": {
+        "title": "Current from a 13.8 V supply",
+        "steps": [
+          "Given V = 13.8 V and R = 46 Ω, choose I = V / R.",
+          "Substitute: I = 13.8 / 46 = 0.30 A.",
+          "Convert if helpful: 0.30 A = 300 mA."
+        ],
+        "result": "The resistor draws 0.30 A (300 mA)."
+      },
+      "tips": [
+        "Convert first: 1 kΩ = 1,000 Ω and 1 mA = 0.001 A.",
+        "The voltage must be measured across the same component whose current and resistance you use.",
+        "Use this simple form for resistors and DC calculations. AC circuits with reactance require impedance and phase information.",
+        "Ohm’s law alone does not give a resistor’s safe wattage. Use the electrical power formula as well."
+      ],
+      "related": [
+        "electrical-power",
+        "series-resistance",
+        "parallel-resistance"
+      ],
+      "lab": "ohm",
+      "sources": []
+    },
+    {
+      "id": "electrical-power",
+      "title": "Electrical power",
+      "definition": "Electrical power is the rate at which electrical energy is transferred or converted. For DC, power equals voltage times current. Combining this with Ohm’s law gives two equivalent ways to calculate power in a resistance.",
+      "variables": [
+        {
+          "symbol": "P",
+          "name": "Electrical power",
+          "unit": "watt (W)",
+          "meaning": "Energy transferred per second; one watt is one joule per second."
+        },
+        {
+          "symbol": "V",
+          "name": "Voltage",
+          "unit": "volt (V)",
+          "meaning": "Voltage across the load."
+        },
+        {
+          "symbol": "I",
+          "name": "Current",
+          "unit": "ampere (A)",
+          "meaning": "Current through the load."
+        },
+        {
+          "symbol": "R",
+          "name": "Resistance",
+          "unit": "ohm (Ω)",
+          "meaning": "Resistance of the load; used in the resistive versions of the formula."
+        }
+      ],
+      "symbols": [
+        "equals",
+        "multiply",
+        "divide",
+        "square",
+        "sqrt",
+        "omega",
+        "group"
+      ],
+      "rearrangements": [
+        {
+          "target": "P — power",
+          "equation": "P = V × I = I² × R = V² / R",
+          "steps": [
+            "Choose the version for the two quantities you know. The resistance forms combine P = VI with V = IR."
+          ]
+        },
+        {
+          "target": "V — voltage",
+          "equation": "V = P / I; for a resistor, V = √(P × R)",
+          "steps": [
+            "Divide P = VI by I. Alternatively multiply P = V²/R by R, then take the square root for the voltage magnitude."
+          ]
+        },
+        {
+          "target": "I — current",
+          "equation": "I = P / V; for a resistor, I = √(P / R)",
+          "steps": [
+            "Divide P = VI by V. Alternatively divide P = I²R by R, then take the square root for the current magnitude."
+          ]
+        },
+        {
+          "target": "R — resistance",
+          "equation": "R = V² / P = P / I²",
+          "steps": [
+            "Rearrange P = V²/R by multiplying by R and dividing by P; or divide P = I²R by I²."
+          ]
+        }
+      ],
+      "example": {
+        "title": "Three routes to resistor power",
+        "steps": [
+          "A 6 Ω resistor has 12 V across it, so I = 12 / 6 = 2 A.",
+          "P = V × I = 12 × 2 = 24 W.",
+          "Check: I²R = 2² × 6 = 24 W; V²/R = 12² / 6 = 24 W."
+        ],
+        "result": "All three versions give 24 W."
+      },
+      "tips": [
+        "V² means V multiplied by itself. Square the numerical value after converting its units.",
+        "Never divide by zero in a rearranged equation. The square-root forms above give magnitudes.",
+        "For a purely resistive sinusoidal AC load, use RMS voltage and RMS current. For a reactive AC load, average real power also depends on power factor.",
+        "A radio’s DC input power and RF output power are different because some input becomes heat. Resistor ratings also need practical thermal margin."
+      ],
+      "related": [
+        "ohms-law",
+        "energy",
+        "power-db"
+      ],
+      "lab": "ohm",
+      "sources": []
+    },
+    {
+      "id": "series-resistance",
+      "title": "Series resistance",
+      "definition": "Resistors in series form a single unbranched path. The same current flows through every resistor, and their voltage drops add. Their equivalent total resistance is the sum of the individual resistances.",
+      "variables": [
+        {
+          "symbol": "Rₜ",
+          "name": "Total equivalent resistance",
+          "unit": "ohm (Ω)",
+          "meaning": "The subscript t means total."
+        },
+        {
+          "symbol": "R₁, R₂, …, Rₙ",
+          "name": "Individual resistor values",
+          "unit": "ohm (Ω)",
+          "meaning": "Subscripts 1, 2 and n label components; n is the number of resistors, not a multiplier."
+        }
+      ],
+      "symbols": [
+        "equals",
+        "plus",
+        "minus",
+        "subscript",
+        "ellipsis",
+        "omega",
+        "group"
+      ],
+      "rearrangements": [
+        {
+          "target": "Rₜ — total resistance",
+          "equation": "Rₜ = R₁ + R₂ + … + Rₙ",
+          "steps": [
+            "Add every resistor in the unbranched series path."
+          ]
+        },
+        {
+          "target": "Any missing resistor",
+          "equation": "Rₙ = Rₜ − (sum of all the other resistors)",
+          "steps": [
+            "Subtract every known resistance from the total."
+          ]
+        },
+        {
+          "target": "R₁ or R₂ in a two-resistor circuit",
+          "equation": "R₁ = Rₜ − R₂; R₂ = Rₜ − R₁",
+          "steps": [
+            "Move the known resistor to the other side by subtracting it."
+          ]
+        }
+      ],
+      "example": {
+        "title": "Find a missing series resistor",
+        "steps": [
+          "The total is 650 Ω. Two known resistors are 100 Ω and 220 Ω.",
+          "Missing R₃ = 650 − 100 − 220 = 330 Ω.",
+          "Check: 100 + 220 + 330 = 650 Ω."
+        ],
+        "result": "The missing resistor is 330 Ω."
+      },
+      "tips": [
+        "For positive resistor values, the total is larger than any individual resistor.",
+        "Convert all values to the same unit before adding. For example, 1 kΩ + 470 Ω = 1,470 Ω.",
+        "A negative calculated resistor value indicates inconsistent measurements, a mistaken total, or the wrong assumed circuit connection.",
+        "Components that look end to end are only in series if no branch leaves their shared junction."
+      ],
+      "related": [
+        "parallel-resistance",
+        "ohms-law"
+      ],
+      "lab": "ohm",
+      "sources": []
+    },
+    {
+      "id": "parallel-resistance",
+      "title": "Parallel resistance",
+      "definition": "Parallel resistors connect across the same two nodes and therefore have the same voltage. The branch currents add. Add the reciprocals of their resistances, then take the reciprocal of that sum to find the equivalent resistance.",
+      "variables": [
+        {
+          "symbol": "Rₜ",
+          "name": "Total equivalent resistance",
+          "unit": "ohm (Ω)",
+          "meaning": "The subscript t means total."
+        },
+        {
+          "symbol": "R₁, R₂, …, Rₙ",
+          "name": "Individual branch resistances",
+          "unit": "ohm (Ω)",
+          "meaning": "Numbered subscripts identify branches. Every branch connects across the same two nodes."
+        },
+        {
+          "symbol": "1/R",
+          "name": "Reciprocal of resistance (conductance)",
+          "unit": "siemens (S)",
+          "meaning": "One divided by resistance. In this expression, the numerator 1 is a number, not current I."
+        }
+      ],
+      "symbols": [
+        "equals",
+        "plus",
+        "minus",
+        "divide",
+        "group",
+        "subscript",
+        "ellipsis",
+        "omega",
+        "multiply"
+      ],
+      "rearrangements": [
+        {
+          "target": "Rₜ — any number of branches",
+          "equation": "Rₜ = 1 / (1/R₁ + 1/R₂ + … + 1/Rₙ)",
+          "steps": [
+            "Add the reciprocals, then invert the entire sum."
+          ]
+        },
+        {
+          "target": "Rₜ — exactly two branches",
+          "equation": "Rₜ = (R₁ × R₂) / (R₁ + R₂)",
+          "steps": [
+            "Put the two reciprocal terms over a common denominator, then invert. This product-over-sum shortcut is only for two resistors."
+          ]
+        },
+        {
+          "target": "Any missing branch",
+          "equation": "Rₙ = 1 / (1/Rₜ − sum of all the other 1/R values)",
+          "steps": [
+            "Subtract the known branch conductances from 1/Rₜ, then invert. The denominator must be positive for a finite positive resistor."
+          ]
+        },
+        {
+          "target": "R₁ or R₂ — exactly two branches",
+          "equation": "R₁ = (Rₜ × R₂)/(R₂ − Rₜ); R₂ = (Rₜ × R₁)/(R₁ − Rₜ)",
+          "steps": [
+            "Start with the two-resistor shortcut, multiply by its denominator, collect the unknown terms and divide."
+          ]
+        }
+      ],
+      "example": {
+        "title": "Two parallel branches",
+        "steps": [
+          "Given R₁ = 100 Ω and R₂ = 300 Ω, use product over sum.",
+          "Rₜ = (100 × 300)/(100 + 300) = 30,000/400 = 75 Ω.",
+          "Reverse check: R₂ = (75 × 100)/(100 − 75) = 300 Ω."
+        ],
+        "result": "The equivalent resistance is 75 Ω."
+      },
+      "tips": [
+        "With finite positive resistors, the total must be less than the smallest branch resistance.",
+        "For n equal resistors, divide one resistor’s resistance by the number of branches.",
+        "Do not stop after adding reciprocals: the result at that stage is conductance, not resistance.",
+        "The reciprocal formulas assume nonzero resistances. An ideal zero-ohm branch shorts the network, making its total zero."
+      ],
+      "related": [
+        "series-resistance",
+        "ohms-law"
+      ],
+      "lab": "ohm",
+      "sources": []
+    },
+    {
+      "id": "wavelength",
+      "title": "Wavelength",
+      "definition": "Wavelength is the distance a repeating wave travels in one complete cycle. Frequency counts cycles per second. In free space their product is the speed of light, so higher frequency means shorter wavelength.",
+      "variables": [
+        {
+          "symbol": "λ",
+          "name": "Wavelength — lambda",
+          "unit": "metre (m)",
+          "meaning": "Distance between corresponding points on adjacent cycles."
+        },
+        {
+          "symbol": "f",
+          "name": "Frequency",
+          "unit": "megahertz (MHz) in the shortcut; hertz (Hz) in λ = c/f",
+          "meaning": "Number of complete cycles per second; 1 MHz = 1,000,000 Hz."
+        },
+        {
+          "symbol": "c",
+          "name": "Speed of light in vacuum",
+          "unit": "metres per second (m/s)",
+          "meaning": "299,792,458 m/s. Rounding to 300,000,000 and using MHz gives the shortcut constant 300."
+        }
+      ],
+      "symbols": [
+        "approx",
+        "equals",
+        "lambda",
+        "divide",
+        "multiply",
+        "group"
+      ],
+      "rearrangements": [
+        {
+          "target": "λ — wavelength",
+          "equation": "λ ≈ 300 / f(MHz); exactly in vacuum, λ = c / f(Hz)",
+          "steps": [
+            "Divide 300 by the frequency in MHz for metres. In the general form, divide wave speed by frequency in Hz."
+          ]
+        },
+        {
+          "target": "f — frequency",
+          "equation": "f(MHz) ≈ 300 / λ(m); f(Hz) = c / λ",
+          "steps": [
+            "Multiply the wavelength equation by f, then divide by λ."
+          ]
+        },
+        {
+          "target": "c — wave speed",
+          "equation": "c = f × λ",
+          "steps": [
+            "Multiply λ = c/f by f. Use Hz and metres to obtain metres per second."
+          ]
+        }
+      ],
+      "example": {
+        "title": "The wavelength of 14.2 MHz",
+        "steps": [
+          "Use the free-space shortcut with f = 14.2 MHz.",
+          "λ ≈ 300 / 14.2 ≈ 21.13 m.",
+          "Check: 14.2 × 21.13 ≈ 300 using the rounded shortcut."
+        ],
+        "result": "One wavelength is approximately 21.13 m."
+      },
+      "tips": [
+        "The 300 shortcut requires MHz and gives metres. Entering 14,200,000 into it would produce the wrong result.",
+        "A physical wire dipole is usually shorter than one half of the free-space wavelength; use the wire dipole estimate for a starting wire length.",
+        "In coax or another medium the wave travels more slowly. Use the propagation speed there, or multiply the free-space wavelength by the cable’s velocity factor.",
+        "A band name such as 20 metres is an approximate label, not the exact wavelength of every frequency in that band."
+      ],
+      "related": [
+        "wire-dipole",
+        "period",
+        "dipole-correction"
+      ],
+      "lab": "wavelength",
+      "sources": []
+    },
+    {
+      "id": "wire-dipole",
+      "title": "Wire dipole estimate",
+      "definition": "This practical starting estimate gives the total tip-to-tip wire length of an ordinary half-wave wire dipole. End effects make this physical length somewhat shorter than half the free-space wavelength. Each of two equal legs is half the total.",
+      "variables": [
+        {
+          "symbol": "Ltotal",
+          "name": "Total dipole wire length",
+          "unit": "metre (m)",
+          "meaning": "Both legs together, from one wire tip to the other. This L means length, not inductance."
+        },
+        {
+          "symbol": "f",
+          "name": "Target frequency",
+          "unit": "megahertz (MHz)",
+          "meaning": "The intended resonance frequency."
+        },
+        {
+          "symbol": "Lleg",
+          "name": "One leg’s wire length",
+          "unit": "metre (m)",
+          "meaning": "Half the total for a symmetric two-leg dipole."
+        },
+        {
+          "symbol": "143",
+          "name": "Practical length constant",
+          "unit": "metre · megahertz (m·MHz)",
+          "meaning": "A rounded construction estimate, close to converting the familiar 468/f formula from feet to metres."
+        }
+      ],
+      "symbols": [
+        "approx",
+        "equals",
+        "divide",
+        "multiply",
+        "group"
+      ],
+      "rearrangements": [
+        {
+          "target": "Ltotal — full wire length",
+          "equation": "Ltotal ≈ 143 / f(MHz)",
+          "steps": [
+            "Divide 143 by the target frequency in MHz."
+          ]
+        },
+        {
+          "target": "f — estimated resonance",
+          "equation": "f(MHz) ≈ 143 / Ltotal(m)",
+          "steps": [
+            "Multiply by f and divide by the full length."
+          ]
+        },
+        {
+          "target": "Lleg — one equal leg",
+          "equation": "Lleg = Ltotal / 2 ≈ 71.5 / f(MHz)",
+          "steps": [
+            "Calculate the total first, then divide by two."
+          ]
+        },
+        {
+          "target": "Ltotal or f from one leg",
+          "equation": "Ltotal = 2 × Lleg; f(MHz) ≈ 71.5 / Lleg(m)",
+          "steps": [
+            "Double one equal leg for the total; alternatively divide 71.5 by a leg length to estimate resonance."
+          ]
+        }
+      ],
+      "example": {
+        "title": "Start a 14.2 MHz dipole",
+        "steps": [
+          "Ltotal ≈ 143 / 14.2 ≈ 10.07 m.",
+          "Each equal leg ≈ 10.07 / 2 ≈ 5.04 m.",
+          "Allow a little adjustment length, install it, then measure and tune in its actual position."
+        ],
+        "result": "About 10.07 m total, or 5.04 m per leg."
+      },
+      "tips": [
+        "This estimate is for a conventional half-wave wire dipole, not every antenna design.",
+        "Insulation, wire diameter, height, bends and nearby objects change resonance. Leave adjustment room and measure before final trimming.",
+        "The total excludes the feedline. Do not cut each leg to the total length.",
+        "An antenna tuner can improve the match seen by a radio without making the wire itself resonant at that frequency."
+      ],
+      "related": [
+        "wavelength",
+        "dipole-correction",
+        "swr-reflection"
+      ],
+      "lab": "antenna",
+      "sources": [
+        "dipole"
+      ]
+    },
+    {
+      "id": "period",
+      "title": "Period",
+      "definition": "The period is the time for one complete cycle of a repeating waveform. It is the reciprocal of frequency: more cycles each second means less time for each cycle.",
+      "variables": [
+        {
+          "symbol": "T",
+          "name": "Period",
+          "unit": "second (s)",
+          "meaning": "Time taken by one complete cycle; capital T is different from the lower-case t used for elapsed time in the energy formula."
+        },
+        {
+          "symbol": "f",
+          "name": "Frequency",
+          "unit": "hertz (Hz)",
+          "meaning": "Cycles per second. Use Hz when calculating T in seconds."
+        },
+        {
+          "symbol": "1",
+          "name": "Reciprocal numerator",
+          "unit": "unitless number",
+          "meaning": "One full cycle; this numeral is not the current symbol I."
+        }
+      ],
+      "symbols": [
+        "equals",
+        "divide",
+        "multiply",
+        "micro",
+        "group"
+      ],
+      "rearrangements": [
+        {
+          "target": "T — period",
+          "equation": "T = 1 / f",
+          "steps": [
+            "Divide 1 by the frequency in Hz to obtain seconds."
+          ]
+        },
+        {
+          "target": "f — frequency",
+          "equation": "f = 1 / T",
+          "steps": [
+            "Multiply T = 1/f by f, then divide by T. T must be positive."
+          ]
+        }
+      ],
+      "example": {
+        "title": "Time for a 1 MHz cycle",
+        "steps": [
+          "Convert 1 MHz to 1,000,000 Hz.",
+          "T = 1 / 1,000,000 = 0.000001 s.",
+          "0.000001 s = 1 µs (one microsecond)."
+        ],
+        "result": "A 1 MHz waveform takes 1 µs per cycle."
+      },
+      "tips": [
+        "Frequency and period are reciprocals, not the same measurement.",
+        "Useful paired units: 1/kHz gives milliseconds; 1/MHz gives microseconds.",
+        "On an oscilloscope, measure the time between corresponding points one full cycle apart, such as adjacent positive peaks.",
+        "Zero frequency has no finite repeating-cycle period. The simple reciprocal assumes a positive repeating frequency."
+      ],
+      "related": [
+        "wavelength",
+        "inductive-reactance",
+        "capacitive-reactance"
+      ],
+      "lab": "modulation",
+      "sources": []
+    },
+    {
+      "id": "inductive-reactance",
+      "title": "Inductive reactance",
+      "definition": "Inductive reactance is the frequency-dependent opposition an ideal inductor presents to sinusoidal alternating current. It increases when either frequency or inductance increases. An ideal inductor stores and returns energy rather than dissipating average power as heat.",
+      "variables": [
+        {
+          "symbol": "Xₗ",
+          "name": "Inductive reactance — X sub L",
+          "unit": "ohm (Ω)",
+          "meaning": "Magnitude of the inductor’s reactance. The subscript L identifies an inductor."
+        },
+        {
+          "symbol": "f",
+          "name": "Frequency",
+          "unit": "hertz (Hz)",
+          "meaning": "Sinusoidal signal frequency."
+        },
+        {
+          "symbol": "L",
+          "name": "Inductance",
+          "unit": "henry (H)",
+          "meaning": "The inductor’s inductance, not an antenna length."
+        },
+        {
+          "symbol": "π",
+          "name": "Pi",
+          "unit": "dimensionless",
+          "meaning": "The constant approximately 3.14159265, not a variable to solve for."
+        }
+      ],
+      "symbols": [
+        "equals",
+        "multiply",
+        "divide",
+        "pi",
+        "subscript",
+        "omega",
+        "micro",
+        "group",
+        "approx"
+      ],
+      "rearrangements": [
+        {
+          "target": "Xₗ — reactance",
+          "equation": "Xₗ = 2 × π × f × L",
+          "steps": [
+            "Convert to Hz and H, then multiply all four factors."
+          ]
+        },
+        {
+          "target": "f — frequency",
+          "equation": "f = Xₗ / (2πL)",
+          "steps": [
+            "Divide both sides by the whole product 2πL."
+          ]
+        },
+        {
+          "target": "L — inductance",
+          "equation": "L = Xₗ / (2πf)",
+          "steps": [
+            "Divide both sides by the whole product 2πf."
+          ]
+        }
+      ],
+      "example": {
+        "title": "A 10 µH inductor at 1 MHz",
+        "steps": [
+          "Convert f = 1,000,000 Hz and L = 0.000010 H.",
+          "Xₗ = 2 × π × 1,000,000 × 0.000010.",
+          "Xₗ ≈ 62.83 Ω. Doubling frequency would double it to about 125.66 Ω."
+        ],
+        "result": "Its inductive reactance is about 62.83 Ω."
+      },
+      "tips": [
+        "Unit prefixes matter: 1 mH = 0.001 H and 1 µH = 0.000001 H.",
+        "In a conventional AC phasor description, inductor voltage leads current by 90 degrees; the signed reactance is positive.",
+        "At steady DC, the ideal inductive reactance is zero. A real coil still has wire resistance and can have a self-resonant frequency.",
+        "When using a calculator, divide by (2 × π × f) as a group when solving for L."
+      ],
+      "related": [
+        "capacitive-reactance",
+        "lc-resonance",
+        "period"
+      ],
+      "lab": "resonance",
+      "sources": [
+        "ac"
+      ]
+    },
+    {
+      "id": "capacitive-reactance",
+      "title": "Capacitive reactance",
+      "definition": "Capacitive reactance describes the opposition an ideal capacitor presents to sinusoidal alternating current. This formula gives its magnitude. Increasing the frequency or capacitance reduces that magnitude.",
+      "variables": [
+        {
+          "symbol": "|X꜀|",
+          "name": "Magnitude of capacitive reactance — X sub C",
+          "unit": "ohm (Ω)",
+          "meaning": "The bars mean magnitude; subscript C identifies a capacitor. In signed reactance notation, X꜀ itself is negative."
+        },
+        {
+          "symbol": "f",
+          "name": "Frequency",
+          "unit": "hertz (Hz)",
+          "meaning": "Sinusoidal signal frequency."
+        },
+        {
+          "symbol": "C",
+          "name": "Capacitance",
+          "unit": "farad (F)",
+          "meaning": "The capacitor’s capacitance; C here is not charge or the speed of light."
+        },
+        {
+          "symbol": "π",
+          "name": "Pi",
+          "unit": "dimensionless",
+          "meaning": "The constant approximately 3.14159265."
+        }
+      ],
+      "symbols": [
+        "equals",
+        "abs",
+        "divide",
+        "multiply",
+        "pi",
+        "subscript",
+        "omega",
+        "micro",
+        "group",
+        "approx"
+      ],
+      "rearrangements": [
+        {
+          "target": "|X꜀| — reactance magnitude",
+          "equation": "|X꜀| = 1 / (2 × π × f × C)",
+          "steps": [
+            "Multiply the entire denominator first, then take its reciprocal."
+          ]
+        },
+        {
+          "target": "f — frequency",
+          "equation": "f = 1 / (2πC × |X꜀|)",
+          "steps": [
+            "Multiply the starting equation by f and divide by |X꜀|. Keep all factors in the denominator."
+          ]
+        },
+        {
+          "target": "C — capacitance",
+          "equation": "C = 1 / (2πf × |X꜀|)",
+          "steps": [
+            "Multiply the starting equation by C and divide by |X꜀|."
+          ]
+        }
+      ],
+      "example": {
+        "title": "A 1 nF capacitor at 1 MHz",
+        "steps": [
+          "Convert f = 1,000,000 Hz and C = 0.000000001 F.",
+          "Denominator = 2 × π × 1,000,000 × 0.000000001 ≈ 0.006283.",
+          "|X꜀| = 1 / 0.006283 ≈ 159.15 Ω."
+        ],
+        "result": "The reactance magnitude is about 159.15 Ω."
+      },
+      "tips": [
+        "Conversions: 1 µF = 10⁻⁶ F; 1 nF = 10⁻⁹ F; 1 pF = 10⁻¹² F.",
+        "Doubling f or C halves the magnitude. An ideal capacitor blocks steady DC after the charging transient.",
+        "For positive f and C, the magnitude is positive. The signed reactance is negative; do not insert that negative sign into the magnitude formula.",
+        "In the ideal sinusoidal case, current leads capacitor voltage by 90 degrees. Real capacitors have loss and parasitic inductance."
+      ],
+      "related": [
+        "inductive-reactance",
+        "lc-resonance",
+        "period"
+      ],
+      "lab": "resonance",
+      "sources": [
+        "ac"
+      ]
+    },
+    {
+      "id": "lc-resonance",
+      "title": "LC resonance",
+      "definition": "An ideal inductor and capacitor resonate where their reactance magnitudes are equal. Energy exchanges between the inductor’s magnetic field and the capacitor’s electric field. The natural resonance frequency depends on the product of L and C.",
+      "variables": [
+        {
+          "symbol": "f₀",
+          "name": "Resonant frequency — f sub zero",
+          "unit": "hertz (Hz)",
+          "meaning": "The subscript zero labels resonance; it does not mean f multiplied by zero."
+        },
+        {
+          "symbol": "L",
+          "name": "Inductance",
+          "unit": "henry (H)",
+          "meaning": "Inductance of the tuned circuit."
+        },
+        {
+          "symbol": "C",
+          "name": "Capacitance",
+          "unit": "farad (F)",
+          "meaning": "Capacitance of the tuned circuit."
+        },
+        {
+          "symbol": "π",
+          "name": "Pi",
+          "unit": "dimensionless",
+          "meaning": "Approximately 3.14159265."
+        }
+      ],
+      "symbols": [
+        "equals",
+        "divide",
+        "multiply",
+        "pi",
+        "sqrt",
+        "square",
+        "group",
+        "subscript",
+        "micro",
+        "approx"
+      ],
+      "rearrangements": [
+        {
+          "target": "f₀ — resonant frequency",
+          "equation": "f₀ = 1 / (2π × √(L × C))",
+          "steps": [
+            "Convert to H and F. Multiply L by C, take the square root of that whole product, multiply by 2π, then take the reciprocal."
+          ]
+        },
+        {
+          "target": "L — inductance",
+          "equation": "L = 1 / ((2πf₀)² × C)",
+          "steps": [
+            "Invert: 1/f₀ = 2π√(LC). Divide by 2π, then square both sides: LC = 1/(2πf₀)². Divide by C."
+          ]
+        },
+        {
+          "target": "C — capacitance",
+          "equation": "C = 1 / ((2πf₀)² × L)",
+          "steps": [
+            "Use LC = 1/(2πf₀)², then divide by L."
+          ]
+        }
+      ],
+      "example": {
+        "title": "Tune 10 µH with 100 pF",
+        "steps": [
+          "L = 10 × 10⁻⁶ H and C = 100 × 10⁻¹² F.",
+          "L × C = 10⁻¹⁵; √(LC) ≈ 3.1623 × 10⁻⁸.",
+          "f₀ = 1 / (2π × 3.1623 × 10⁻⁸) ≈ 5,032,921 Hz."
+        ],
+        "result": "The ideal resonance is approximately 5.03 MHz."
+      },
+      "tips": [
+        "The square root applies to both L and C. Square the whole (2πf₀) group in the rearranged versions.",
+        "Doubling L alone reduces resonance by √2; quadrupling L halves resonance. The same relationships apply to C.",
+        "Ideal series resonance has minimum impedance. Ideal parallel resonance has maximum impedance; resistance and loading change the real response.",
+        "Real components have tolerance, losses and stray capacitance or inductance. Measure a built circuit rather than assuming the ideal value is exact."
+      ],
+      "related": [
+        "inductive-reactance",
+        "capacitive-reactance"
+      ],
+      "lab": "resonance",
+      "sources": [
+        "lc"
+      ]
+    },
+    {
+      "id": "power-db",
+      "title": "Power ratio in dB",
+      "definition": "Decibels express a ratio on a logarithmic scale. This formula compares a final power with a reference or input power. A positive result is gain, a negative result is loss, and zero means equal powers.",
+      "variables": [
+        {
+          "symbol": "D (shown as dB on the formula card)",
+          "name": "Power gain or loss",
+          "unit": "decibel (dB)",
+          "meaning": "The signed numerical result. D is introduced here to make rearranging the equation clearer."
+        },
+        {
+          "symbol": "P₂",
+          "name": "Output or compared power",
+          "unit": "watt (W), or the same power unit as P₁",
+          "meaning": "The power being compared; subscript 2 is a label."
+        },
+        {
+          "symbol": "P₁",
+          "name": "Input or reference power",
+          "unit": "watt (W), or the same power unit as P₂",
+          "meaning": "The denominator and reference. Both powers must be positive for a finite logarithm."
+        },
+        {
+          "symbol": "V₂, V₁",
+          "name": "Compared and reference RMS voltage magnitudes",
+          "unit": "volt (V), or matching voltage units",
+          "meaning": "Used only in the 20 log voltage form under the same real impedance conditions."
+        }
+      ],
+      "symbols": [
+        "equals",
+        "divide",
+        "multiply",
+        "log",
+        "power",
+        "subscript",
+        "group",
+        "minus"
+      ],
+      "rearrangements": [
+        {
+          "target": "D — decibel ratio",
+          "equation": "D = 10 × log₁₀(P₂/P₁)",
+          "steps": [
+            "Divide the powers first, take the base-ten logarithm, then multiply by 10."
+          ]
+        },
+        {
+          "target": "P₂ — output power",
+          "equation": "P₂ = P₁ × 10^(D/10)",
+          "steps": [
+            "Divide D by 10 and undo log₁₀ by raising 10 to that value. Then multiply by P₁."
+          ]
+        },
+        {
+          "target": "P₁ — reference power",
+          "equation": "P₁ = P₂ / 10^(D/10)",
+          "steps": [
+            "Divide the compared power by the linear power ratio."
+          ]
+        },
+        {
+          "target": "Equal-impedance voltage ratio",
+          "equation": "D = 20 × log₁₀(V₂/V₁)",
+          "steps": [
+            "At the same real impedance, power is proportional to voltage squared; the square produces the factor 20."
+          ]
+        },
+        {
+          "target": "V₂ or V₁ — equal-impedance voltages",
+          "equation": "V₂ = V₁ × 10^(D/20); V₁ = V₂ / 10^(D/20)",
+          "steps": [
+            "Divide D by 20 before taking the power of ten for a voltage ratio."
+          ]
+        }
+      ],
+      "example": {
+        "title": "A power gain and its inverse",
+        "steps": [
+          "P₁ = 10 W and P₂ = 100 W, so the power ratio is 10.",
+          "D = 10 × log₁₀(10) = 10 dB.",
+          "Reverse check: P₂ = 10 × 10^(10/10) = 100 W."
+        ],
+        "result": "Ten times the power is a gain of 10 dB."
+      },
+      "tips": [
+        "A power doubling is about +3.01 dB; halving is about −3.01 dB; tenfold power is +10 dB.",
+        "Use 10 log for power. Use 20 log for voltage magnitudes only when the impedance condition is met.",
+        "Choose the order deliberately: P₂/P₁ describes output relative to input. A positive loss specification is usually subtracted when calculating the remaining output.",
+        "dB is a ratio, not an absolute power. dBm uses 1 mW as its reference; dBW uses 1 W. Never take the logarithm of zero or a negative power."
+      ],
+      "related": [
+        "electrical-power",
+        "antenna-references",
+        "swr-reflection"
+      ],
+      "lab": "gain",
+      "sources": [
+        "db"
+      ]
+    },
+    {
+      "id": "swr-reflection",
+      "title": "SWR reflection",
+      "definition": "Standing wave ratio describes the size of the standing-wave peaks relative to their minima on a line. The formula converts SWR to the magnitude of the voltage-wave reflection coefficient. Squaring that magnitude gives the reflected-to-forward power fraction at the same measurement plane.",
+      "variables": [
+        {
+          "symbol": "SWR (also VSWR)",
+          "name": "Voltage standing wave ratio",
+          "unit": "dimensionless ratio, written x:1",
+          "meaning": "Use the numerical x in the equation; 2:1 means SWR = 2."
+        },
+        {
+          "symbol": "Γ",
+          "name": "Voltage-wave reflection coefficient — capital gamma",
+          "unit": "dimensionless",
+          "meaning": "The full coefficient can include phase. This equation gives only its magnitude |Γ|."
+        },
+        {
+          "symbol": "r",
+          "name": "Reflection magnitude, shorthand for |Γ|",
+          "unit": "dimensionless",
+          "meaning": "A convenient nonnegative label used in the rearrangements."
+        },
+        {
+          "symbol": "ρ",
+          "name": "Reflected-power fraction — lower-case rho",
+          "unit": "dimensionless",
+          "meaning": "ρ = reflected power / forward power at the same plane; this page uses rho for power fraction, although other references may use that letter for reflection magnitude."
+        }
+      ],
+      "symbols": [
+        "equals",
+        "gamma",
+        "abs",
+        "minus",
+        "plus",
+        "divide",
+        "square",
+        "sqrt",
+        "group",
+        "ratio",
+        "approx",
+        "multiply"
+      ],
+      "rearrangements": [
+        {
+          "target": "|Γ| — reflection magnitude",
+          "equation": "r = |Γ| = (SWR − 1)/(SWR + 1)",
+          "steps": [
+            "Subtract 1 from SWR, then divide by SWR plus 1."
+          ]
+        },
+        {
+          "target": "SWR — standing wave ratio",
+          "equation": "SWR = (1 + r)/(1 − r)",
+          "steps": [
+            "Start with r(SWR + 1) = SWR − 1. Collect SWR terms, then divide by 1 − r."
+          ]
+        },
+        {
+          "target": "ρ — reflected-power fraction",
+          "equation": "ρ = r²; reflected percentage = 100 × r²",
+          "steps": [
+            "Square the reflection magnitude. Multiply by 100 to express a percentage."
+          ]
+        },
+        {
+          "target": "r or SWR from a power fraction",
+          "equation": "r = √ρ; SWR = (1 + √ρ)/(1 − √ρ)",
+          "steps": [
+            "Use a fraction, not a percentage: 25% means ρ = 0.25. Take its square root before converting to SWR."
+          ]
+        }
+      ],
+      "example": {
+        "title": "What does 2:1 SWR reflect?",
+        "steps": [
+          "r = (2 − 1)/(2 + 1) = 1/3 ≈ 0.3333.",
+          "ρ = (1/3)² ≈ 0.1111.",
+          "Reflected percentage ≈ 100 × 0.1111 = 11.11%."
+        ],
+        "result": "A 2:1 SWR corresponds to about 11.1% reflected power at that plane."
+      },
+      "tips": [
+        "A perfect match has r = 0 and SWR = 1:1. For a passive load with a real positive line reference, 0 ≤ r ≤ 1.",
+        "As r approaches 1, SWR tends to infinity. At r = 1 the finite SWR expression divides by zero; an ideal open or short is this limit.",
+        "SWR alone does not reveal reflection phase, the exact load impedance, or antenna radiation efficiency.",
+        "Measurements must refer to the same plane. Feedline loss can make the radio-end SWR look better than the load-end SWR; a good match can also be a lossy dummy load."
+      ],
+      "related": [
+        "power-db",
+        "wire-dipole",
+        "dipole-correction"
+      ],
+      "lab": "antenna",
+      "sources": [
+        "swr"
+      ]
+    },
+    {
+      "id": "energy",
+      "title": "Energy",
+      "definition": "Energy is power accumulated over time. For constant or average power, multiply watts by hours to obtain watt-hours. This is useful for estimating how much energy a radio station or accessory needs during an operating session.",
+      "variables": [
+        {
+          "symbol": "E",
+          "name": "Electrical energy",
+          "unit": "watt-hour (Wh), or joule (J) with seconds",
+          "meaning": "The total energy used or supplied. Wh is an energy unit, not watts per hour."
+        },
+        {
+          "symbol": "P",
+          "name": "Constant or average power",
+          "unit": "watt (W)",
+          "meaning": "Use average power over the operating period when the load changes."
+        },
+        {
+          "symbol": "t",
+          "name": "Elapsed operating time",
+          "unit": "hour (h) for Wh; second (s) for J",
+          "meaning": "Lower-case t is elapsed time; it is not necessarily the waveform period T."
+        }
+      ],
+      "symbols": [
+        "equals",
+        "multiply",
+        "divide",
+        "group",
+        "approx"
+      ],
+      "rearrangements": [
+        {
+          "target": "E — energy",
+          "equation": "E(Wh) = P(W) × t(h)",
+          "steps": [
+            "Multiply the average watts by the number of hours."
+          ]
+        },
+        {
+          "target": "P — average power",
+          "equation": "P(W) = E(Wh) / t(h)",
+          "steps": [
+            "Divide both sides by elapsed time; use a nonzero time."
+          ]
+        },
+        {
+          "target": "t — operating time",
+          "equation": "t(h) = E(Wh) / P(W)",
+          "steps": [
+            "Divide energy by the positive average power draw."
+          ]
+        },
+        {
+          "target": "Energy in joules",
+          "equation": "E(J) = P(W) × t(s); 1 Wh = 3,600 J",
+          "steps": [
+            "One hour contains 3,600 seconds. Multiply Wh by 3,600 to convert to joules; divide joules by 3,600 for Wh."
+          ]
+        }
+      ],
+      "example": {
+        "title": "Run a 12 W load for five hours",
+        "steps": [
+          "Given P = 12 W and t = 5 h, use E = P × t.",
+          "E = 12 × 5 = 60 Wh.",
+          "Reverse check: t = 60 / 12 = 5 h; in joules, 60 × 3,600 = 216,000 J."
+        ],
+        "result": "The load uses 60 Wh, equivalent to 216,000 J."
+      },
+      "tips": [
+        "Convert minutes to hours before using Wh: 30 minutes is 0.5 h.",
+        "Nominal battery energy is approximately nominal volts multiplied by ampere-hours. A 12 V, 7 Ah battery is nominally about 84 Wh, not 84 W.",
+        "Actual usable battery energy depends on discharge rate, temperature, age, cutoff voltage and conversion losses, so nominal Wh does not guarantee runtime.",
+        "For a radio that alternates receive and transmit, calculate each interval’s energy and add them, or use a duty-cycle-weighted average power."
+      ],
+      "related": [
+        "electrical-power",
+        "ohms-law"
+      ],
+      "lab": null,
+      "sources": []
+    },
+    {
+      "id": "dipole-correction",
+      "title": "Dipole correction",
+      "definition": "This first approximation adjusts a dipole’s physical length using the resonance you measured and the resonance you want. It assumes resonance varies inversely with length while the antenna’s design and surroundings remain similar.",
+      "variables": [
+        {
+          "symbol": "Lnew",
+          "name": "New desired total wire length",
+          "unit": "metre (m), or the same length unit as Lold",
+          "meaning": "The adjusted full length of both dipole legs together."
+        },
+        {
+          "symbol": "Lold",
+          "name": "Existing total wire length",
+          "unit": "metre (m), or matching length units",
+          "meaning": "The full length when the original resonance was measured."
+        },
+        {
+          "symbol": "fmeasured",
+          "name": "Measured resonance frequency",
+          "unit": "MHz, or the same frequency unit as ftarget",
+          "meaning": "The antenna’s present resonance, measured at the appropriate reference plane."
+        },
+        {
+          "symbol": "ftarget",
+          "name": "Target resonance frequency",
+          "unit": "MHz, or matching frequency units",
+          "meaning": "The frequency where you want the antenna to resonate."
+        }
+      ],
+      "symbols": [
+        "approx",
+        "multiply",
+        "divide",
+        "group",
+        "equals",
+        "minus"
+      ],
+      "rearrangements": [
+        {
+          "target": "Lnew — new full length",
+          "equation": "Lnew ≈ Lold × fmeasured / ftarget",
+          "steps": [
+            "Divide measured frequency by target frequency, then multiply by the old full length."
+          ]
+        },
+        {
+          "target": "Lold — original full length",
+          "equation": "Lold ≈ Lnew × ftarget / fmeasured",
+          "steps": [
+            "Multiply by ftarget and divide by fmeasured to isolate the original length."
+          ]
+        },
+        {
+          "target": "fmeasured — original resonance",
+          "equation": "fmeasured ≈ Lnew × ftarget / Lold",
+          "steps": [
+            "Multiply both sides by ftarget and divide by Lold."
+          ]
+        },
+        {
+          "target": "ftarget — estimated new resonance",
+          "equation": "ftarget ≈ Lold × fmeasured / Lnew",
+          "steps": [
+            "Multiply by ftarget, then divide by Lnew."
+          ]
+        }
+      ],
+      "example": {
+        "title": "Move resonance from 13.5 MHz to 14.2 MHz",
+        "steps": [
+          "A 10.5 m total dipole resonates at 13.5 MHz.",
+          "Lnew ≈ 10.5 × 13.5 / 14.2 ≈ 9.982 m total.",
+          "Total shortening ≈ 10.5 − 9.982 = 0.518 m. For equal legs, shorten each by about 0.259 m as an estimate."
+        ],
+        "result": "The first estimate is about 9.98 m total; adjust cautiously and remeasure."
+      },
+      "tips": [
+        "Measured resonance below target means the wire is too long: the calculated new length should be shorter.",
+        "Measured resonance above target means the wire is too short: the new length should be longer.",
+        "The frequency units cancel if they match, and the answer keeps the old length unit. Adjust both equal legs equally.",
+        "Use measured antenna resonance rather than assuming a tuner’s low radio-side SWR identifies it. A lowest-SWR point is not always exactly zero reactance.",
+        "The inverse-length model is approximate. Fold back or make small changes first, then measure again with the antenna installed."
+      ],
+      "related": [
+        "wire-dipole",
+        "wavelength",
+        "swr-reflection"
+      ],
+      "lab": "antenna",
+      "sources": [
+        "dipole"
+      ]
+    },
+    {
+      "id": "fm-bandwidth",
+      "title": "FM bandwidth estimate",
+      "definition": "Carson’s rule estimates the bandwidth containing most of a frequency-modulated signal’s power from its peak frequency deviation and highest significant modulating frequency. It helps explain why wider deviation or higher audio frequencies occupy more spectrum.",
+      "variables": [
+        {
+          "symbol": "B",
+          "name": "Estimated FM bandwidth",
+          "unit": "Hz or kHz, matching the inputs",
+          "meaning": "Approximate full width of the signal around its carrier, not the carrier frequency itself."
+        },
+        {
+          "symbol": "Δf",
+          "name": "Peak frequency deviation — delta f",
+          "unit": "Hz or kHz",
+          "meaning": "Largest shift above or below the carrier, not the peak-to-peak excursion."
+        },
+        {
+          "symbol": "fₘ",
+          "name": "Highest significant modulating frequency — f sub m",
+          "unit": "Hz or kHz",
+          "meaning": "The upper audio or baseband frequency to include; m labels modulation, not metres."
+        }
+      ],
+      "symbols": [
+        "approx",
+        "equals",
+        "delta",
+        "plus",
+        "minus",
+        "multiply",
+        "divide",
+        "group",
+        "subscript"
+      ],
+      "rearrangements": [
+        {
+          "target": "B — bandwidth",
+          "equation": "B ≈ 2 × (Δf + fₘ)",
+          "steps": [
+            "Add deviation and the highest significant modulating frequency using matching units, then multiply their sum by two."
+          ]
+        },
+        {
+          "target": "Δf — peak deviation",
+          "equation": "Δf ≈ B/2 − fₘ",
+          "steps": [
+            "Divide the estimated bandwidth by two, then subtract the highest modulating frequency."
+          ]
+        },
+        {
+          "target": "fₘ — maximum modulating frequency",
+          "equation": "fₘ ≈ B/2 − Δf",
+          "steps": [
+            "Divide bandwidth by two, then subtract peak deviation."
+          ]
+        }
+      ],
+      "example": {
+        "title": "FM voice with 5 kHz peak deviation",
+        "steps": [
+          "Given Δf = 5 kHz and fₘ = 3 kHz.",
+          "B ≈ 2 × (5 + 3) = 16 kHz.",
+          "Reverse check: Δf ≈ 16/2 − 3 = 5 kHz."
+        ],
+        "result": "Carson’s rule estimates approximately 16 kHz of bandwidth."
+      },
+      "tips": [
+        "Use the peak deviation on one side of the carrier. A ±5 kHz deviation means Δf = 5 kHz, not 10 kHz.",
+        "Channel spacing and occupied bandwidth are different concepts; this estimate does not prove compliance with an emission mask or Canadian bandwidth limit.",
+        "FM has many sidebands. Carson’s rule is an engineering approximation, often described as covering about 98% of the power under its usual assumptions.",
+        "A negative result when solving for deviation or modulating frequency means the supplied values cannot fit this model."
+      ],
+      "related": [
+        "period",
+        "wavelength"
+      ],
+      "lab": "modulation",
+      "sources": [
+        "fm"
+      ]
+    },
+    {
+      "id": "antenna-references",
+      "title": "Antenna references",
+      "definition": "dBi and dBd express antenna gain relative to different reference antennas. dBi uses an ideal isotropic radiator; dBd uses an ideal lossless half-wave dipole. Converting the reference changes the number by about 2.15 dB without changing the antenna.",
+      "variables": [
+        {
+          "symbol": "dBi (Gᵢ in the rearrangements)",
+          "name": "Gain relative to an isotropic radiator",
+          "unit": "decibel relative to isotropic (dBi)",
+          "meaning": "The i means isotropic: a theoretical radiator that sends equal power in every direction."
+        },
+        {
+          "symbol": "dBd (Gd in the rearrangements)",
+          "name": "Gain relative to a reference half-wave dipole",
+          "unit": "decibel relative to dipole (dBd)",
+          "meaning": "The final d means dipole. The reference is an ideal lossless half-wave dipole in free space."
+        },
+        {
+          "symbol": "2.15",
+          "name": "Reference offset",
+          "unit": "decibel (dB)",
+          "meaning": "Rounded gain difference between the ideal reference dipole’s maximum direction and an isotropic radiator."
+        }
+      ],
+      "symbols": [
+        "approx",
+        "plus",
+        "minus",
+        "equals",
+        "group"
+      ],
+      "rearrangements": [
+        {
+          "target": "dBi — isotropic-reference gain",
+          "equation": "Gᵢ(dBi) ≈ Gd(dBd) + 2.15",
+          "steps": [
+            "Add the 2.15 dB reference offset."
+          ]
+        },
+        {
+          "target": "dBd — dipole-reference gain",
+          "equation": "Gd(dBd) ≈ Gᵢ(dBi) − 2.15",
+          "steps": [
+            "Subtract the same offset to reverse the conversion."
+          ]
+        }
+      ],
+      "example": {
+        "title": "Compare two antenna advertisements",
+        "steps": [
+          "One antenna is rated at 6 dBd.",
+          "Convert: 6 + 2.15 = 8.15 dBi.",
+          "An 8.15 dBi rating describes the same numerical gain after this reference conversion, provided the measurement conditions match."
+        ],
+        "result": "6 dBd corresponds to approximately 8.15 dBi."
+      },
+      "tips": [
+        "The larger dBi number does not itself indicate a better antenna than an equivalent dBd rating.",
+        "Antenna gain describes radiation in a stated direction and includes efficiency; it does not mean the antenna creates extra transmitter power.",
+        "For EIRP calculations, combine antenna gain in dBi with transmitter power and feedline loss expressed consistently. ERP uses the dipole reference.",
+        "Compare frequency, direction, polarization, efficiency and measurement conditions along with the reference label."
+      ],
+      "related": [
+        "power-db",
+        "electrical-power"
+      ],
+      "lab": "gain",
+      "sources": [
+        "gain"
+      ]
+    }
+  ]
+}

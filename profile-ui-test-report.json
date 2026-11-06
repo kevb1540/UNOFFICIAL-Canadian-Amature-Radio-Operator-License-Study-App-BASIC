@@ -1,0 +1,7 @@
+{
+  "passed": 15,
+  "errors": [],
+  "email_transport": "Real local Python service with test-only mailbox; no external SMTP used",
+  "camera": "Bridge callback simulated; Android camera needs device check",
+  "time": "2026-10-17T18:10:42.870Z"
+}

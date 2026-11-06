@@ -1,0 +1,22 @@
+plugins { id 'com.android.application' }
+android {
+    namespace 'ca.kevin.maplewave'
+    compileSdk 36
+    defaultConfig {
+        applicationId 'ca.kevin.maplewave'
+        minSdk 26
+        targetSdk 36
+        versionCode 275
+        versionName '2.3.45'
+    }
+    signingConfigs {
+        development {
+            storeFile file('../android_development/debug.keystore')
+            storePassword 'android'
+            keyAlias 'androiddebugkey'
+            keyPassword 'android'
+        }
+    }
+    buildTypes { debug { signingConfig signingConfigs.development } }
+    compileOptions { sourceCompatibility JavaVersion.VERSION_1_8; targetCompatibility JavaVersion.VERSION_1_8 }
+}

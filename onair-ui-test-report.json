@@ -1,0 +1,15 @@
+{
+  "passed": 9,
+  "on_air_terms": 61,
+  "glossary_terms": 223,
+  "groups": 6,
+  "errors": [],
+  "external_requests": [],
+  "layouts": [
+    "320×740",
+    "393×852",
+    "852×393",
+    "800×1280"
+  ],
+  "checked_at": "2026-10-17T18:11:07.650Z"
+}

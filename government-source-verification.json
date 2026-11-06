@@ -1,0 +1,283 @@
+{
+  "checked_at": "2026-10-24T07:38:49.006886-04:00",
+  "scope": "Live source titles, author metadata, editions and page dates; exact English/French question and answer comparison. Does not certify every authored explanation.",
+  "pages": [
+    {
+      "id": "exam",
+      "url": "https://ised-isde.canada.ca/site/amateur-radio-operator-certificate-services/en/amateur-radio-exam-generator",
+      "expected_title": "Amateur radio exam generator",
+      "title": "Amateur radio exam generator",
+      "resolved_url": "https://ised-isde.canada.ca/site/amateur-radio-operator-certificate-services/en/amateur-radio-exam-generator",
+      "sha256_html": "9d024771ced2c80655b46a3899be66721003e049e4fe518e5a91965b3ae5390d",
+      "metadata": {
+        "author": "",
+        "dcterms.modified": "2025-07-15"
+      },
+      "checks": {
+        "complete_title": true,
+        "version_markers": true,
+        "page_modified": true
+      },
+      "passed": true
+    },
+    {
+      "id": "ric3",
+      "url": "https://ised-isde.canada.ca/site/spectrum-management-telecommunications/en/licences-and-certificates/radiocom-information-circulars-ric/ric-3-information-amateur-radio-service",
+      "expected_title": "RIC-3 — Information on the Amateur Radio Service",
+      "title": "RIC-3 — Information on the Amateur Radio Service",
+      "resolved_url": "https://ised-isde.canada.ca/site/spectrum-management-telecommunications/en/licences-and-certificates/radiocom-information-circulars-ric/ric-3-information-amateur-radio-service",
+      "sha256_html": "69c1a52bc0e396afeb6f08e08cd0c208650df9c4c0644151180eb6ccebbeff7d",
+      "metadata": {
+        "dcterms.creator": "Government of Canada, Innovation, Science and Economic Development Canada, Office of the Deputy Minister, Spectrum and Telecommunications Sector",
+        "author": "Spectrum and Telecommunications Sector",
+        "dcterms.modified": "2022-03-21"
+      },
+      "checks": {
+        "complete_title": true,
+        "version_markers": true,
+        "page_modified": true,
+        "source_author": true,
+        "source_creator": true
+      },
+      "passed": true
+    },
+    {
+      "id": "rbr4",
+      "url": "https://ised-isde.canada.ca/site/spectrum-management-telecommunications/en/licences-and-certificates/regulations-reference-rbr/rbr-4-standards-operation-radio-stations-amateur-radio-service",
+      "expected_title": "RBR-4 — Standards for the Operation of Radio Stations in the Amateur Radio Service",
+      "title": "RBR-4 — Standards for the Operation of Radio Stations in the Amateur Radio Service",
+      "resolved_url": "https://ised-isde.canada.ca/site/spectrum-management-telecommunications/en/licences-and-certificates/regulations-reference-rbr/rbr-4-standards-operation-radio-stations-amateur-radio-service",
+      "sha256_html": "6c5550506ac70ee82c5499f83e1a5df4600371baaeef386684e10b2ca2fff205",
+      "metadata": {
+        "dcterms.creator": "Government of Canada, Innovation, Science and Economic Development Canada, Office of the Deputy Minister, Spectrum and Telecommunications Sector",
+        "author": "Spectrum and Telecommunications Sector",
+        "dcterms.modified": "2022-07-27"
+      },
+      "checks": {
+        "complete_title": true,
+        "version_markers": true,
+        "page_modified": true,
+        "source_author": true,
+        "source_creator": true
+      },
+      "passed": true
+    },
+    {
+      "id": "law",
+      "url": "https://laws-lois.justice.gc.ca/eng/regulations/SOR-96-484/FullText.html",
+      "expected_title": "Radiocommunication Regulations (SOR/96-484)",
+      "title": "Radiocommunication Regulations (SOR/96-484)",
+      "resolved_url": "https://laws-lois.justice.gc.ca/eng/regulations/SOR-96-484/FullText.html",
+      "sha256_html": "1ebc181f76db5367346ad5d2a22a4dc53b327d75c827a2f338741ba6fd292369",
+      "metadata": {
+        "dcterms.creator": "Legislative Services Branch",
+        "dcterms.modified": "2021-04-01"
+      },
+      "checks": {
+        "complete_title": true,
+        "version_markers": true,
+        "page_modified": true,
+        "source_creator": true
+      },
+      "passed": true
+    },
+    {
+      "id": "ric1",
+      "url": "https://ised-isde.canada.ca/site/spectrum-management-telecommunications/en/licences-and-certificates/radiocom-information-circulars-ric/ric-1-guide-examiners-accredited-conduct-examinations-amateur-radio-operator-certificates",
+      "expected_title": "RIC-1 — Guide for Examiners Accredited to Conduct Examinations for Amateur Radio Operator Certificates",
+      "title": "RIC-1 — Guide for Examiners Accredited to Conduct Examinations for Amateur Radio Operator Certificates",
+      "resolved_url": "https://ised-isde.canada.ca/site/spectrum-management-telecommunications/en/licences-and-certificates/radiocom-information-circulars-ric/ric-1-guide-examiners-accredited-conduct-examinations-amateur-radio-operator-certificates",
+      "sha256_html": "49bd1df57afe1830e204956a56d535f1369b1a612cfc8ac249bfce9afe9e2bbf",
+      "metadata": {
+        "dcterms.creator": "Government of Canada, Innovation, Science and Economic Development Canada, Office of the Deputy Minister, Spectrum and Telecommunications Sector",
+        "author": "Spectrum and Telecommunications Sector",
+        "dcterms.modified": "2025-05-29"
+      },
+      "checks": {
+        "complete_title": true,
+        "version_markers": true,
+        "page_modified": true,
+        "source_author": true,
+        "source_creator": true
+      },
+      "passed": true
+    },
+    {
+      "id": "certificate",
+      "url": "https://ised-isde.canada.ca/site/spectrum-management-telecommunications/en/licences-and-certificates/radio-authorizations/amateur-radio-operator-certification",
+      "expected_title": "Amateur radio operator certification",
+      "title": "Amateur radio operator certification",
+      "resolved_url": "https://ised-isde.canada.ca/site/spectrum-management-telecommunications/en/licences-and-certificates/radio-authorizations/amateur-radio-operator-certification",
+      "sha256_html": "9db5779cca9a0cc5e035cae3fc05d35004a315e7749413fa313b602a05e010c9",
+      "metadata": {
+        "author": "",
+        "dcterms.modified": "2024-09-20"
+      },
+      "checks": {
+        "complete_title": true,
+        "version_markers": true,
+        "page_modified": true
+      },
+      "passed": true
+    },
+    {
+      "id": "start",
+      "url": "https://ised-isde.canada.ca/site/spectrum-management-telecommunications/en/licences-and-certificates/radio-authorizations/amateur-radio-operator-certification/how-become-amateur-radio-operator-overview",
+      "expected_title": "How to become an amateur radio operator - Overview",
+      "title": "How to become an amateur radio operator - Overview",
+      "resolved_url": "https://ised-isde.canada.ca/site/spectrum-management-telecommunications/en/licences-and-certificates/radio-authorizations/amateur-radio-operator-certification/how-become-amateur-radio-operator-overview",
+      "sha256_html": "26ebe6ac9015f31301f331244f2af5de84ee129537125c374a5fd3a82ab78172",
+      "metadata": {
+        "author": "",
+        "dcterms.modified": "2024-10-01"
+      },
+      "checks": {
+        "complete_title": true,
+        "version_markers": true,
+        "page_modified": true
+      },
+      "passed": true
+    },
+    {
+      "id": "examiner",
+      "url": "https://ised-isde.canada.ca/site/amateur-radio-operator-certificate-services/en/accredited-examiners",
+      "expected_title": "Accredited examiners",
+      "title": "Accredited examiners",
+      "resolved_url": "https://ised-isde.canada.ca/site/amateur-radio-operator-certificate-services/en/accredited-examiners",
+      "sha256_html": "4948c21b36d021f88284a595a0b39a53aa6c0aa6c0b95da52cedf6104a2cd91e",
+      "metadata": {
+        "dcterms.creator": "Government of Canada, Innovation, Science and Economic Development Canada, Office of the Deputy Minister, Spectrum and Telecommunications Sector",
+        "author": "Spectrum and Telecommunications Sector",
+        "dcterms.modified": "2025-07-15"
+      },
+      "checks": {
+        "complete_title": true,
+        "version_markers": true,
+        "page_modified": true,
+        "source_author": true,
+        "source_creator": true
+      },
+      "passed": true
+    },
+    {
+      "id": "bank",
+      "url": "https://ised-isde.canada.ca/site/amateur-radio-operator-certificate-services/en/downloads",
+      "expected_title": "Downloads",
+      "title": "Downloads",
+      "resolved_url": "https://ised-isde.canada.ca/site/amateur-radio-operator-certificate-services/en/downloads",
+      "sha256_html": "2d9404b6ecd59207625f9ee23dbb54566d354a865655d88953b8a9d645b6fdf0",
+      "metadata": {
+        "dcterms.creator": "Government of Canada, Innovation, Science and Economic Development Canada, Office of the Deputy Minister, Spectrum and Telecommunications Sector",
+        "author": "Spectrum and Telecommunications Sector",
+        "dcterms.modified": "2025-07-15"
+      },
+      "checks": {
+        "complete_title": true,
+        "version_markers": true,
+        "page_modified": true,
+        "source_author": true,
+        "source_creator": true
+      },
+      "passed": true
+    },
+    {
+      "id": "calls",
+      "url": "https://ised-isde.canada.ca/site/spectrum-management-telecommunications/en/licences-and-certificates/radiocom-information-circulars-ric/ric-9-call-sign-policy-and-special-event-prefixes",
+      "expected_title": "RIC-9 — Call Sign Policy and Special Event Prefixes",
+      "title": "RIC-9 — Call Sign Policy and Special Event Prefixes",
+      "resolved_url": "https://ised-isde.canada.ca/site/spectrum-management-telecommunications/en/licences-and-certificates/radiocom-information-circulars-ric/ric-9-call-sign-policy-and-special-event-prefixes",
+      "sha256_html": "6cf3e2c3e110ccb1d78150c1b5db90c7091795ce4cda5562fada802e61fefc73",
+      "metadata": {
+        "dcterms.creator": "Government of Canada, Innovation, Science and Economic Development Canada, Office of the Deputy Minister, Spectrum and Telecommunications Sector",
+        "author": "Spectrum and Telecommunications Sector",
+        "dcterms.modified": "2016-04-25"
+      },
+      "checks": {
+        "complete_title": true,
+        "version_markers": true,
+        "page_modified": true,
+        "source_author": true,
+        "source_creator": true
+      },
+      "passed": true
+    },
+    {
+      "id": "safety",
+      "url": "https://www.canada.ca/en/health-canada/services/health-risks-safety/radiation/occupational-exposure-regulations/safety-code-6-radiofrequency-exposure-guidelines.html",
+      "expected_title": "Understanding Safety Code 6: Health Canada's radiofrequency exposure guidelines",
+      "title": "Understanding Safety Code 6: Health Canada's radiofrequency exposure guidelines",
+      "resolved_url": "https://www.canada.ca/en/health-canada/services/health-risks-safety/radiation/occupational-exposure-regulations/safety-code-6-radiofrequency-exposure-guidelines.html",
+      "sha256_html": "b37c49498546fe5d96422d18dbc90fa1ebc8fa9960559e440cb188a000e5fbf9",
+      "metadata": {
+        "author": "Health Canada",
+        "dcterms.creator": "Health Canada",
+        "dcterms.modified": "2024-04-04"
+      },
+      "checks": {
+        "complete_title": true,
+        "version_markers": true,
+        "page_modified": true,
+        "source_author": true,
+        "source_creator": true
+      },
+      "passed": true
+    },
+    {
+      "id": "antenna",
+      "url": "https://ised-isde.canada.ca/site/spectrum-management-telecommunications/en/learn-more/key-documents/procedures/client-procedures-circulars-cpc/cpc-2-0-03-radiocommunication-and-broadcasting-antenna-systems",
+      "expected_title": "CPC-2-0-03 — Radiocommunication and Broadcasting Antenna Systems",
+      "title": "CPC-2-0-03 — Radiocommunication and Broadcasting Antenna Systems",
+      "resolved_url": "https://ised-isde.canada.ca/site/spectrum-management-telecommunications/en/learn-more/key-documents/procedures/client-procedures-circulars-cpc/cpc-2-0-03-radiocommunication-and-broadcasting-antenna-systems",
+      "sha256_html": "ca55695b5b8ae2cbf2f0bd6b0232b9e5ee3063f9c321bf2b85a4abd3ca58ad8e",
+      "metadata": {
+        "dcterms.creator": "Government of Canada, Innovation, Science and Economic Development Canada, Office of the Deputy Minister, Spectrum and Telecommunications Sector",
+        "author": "Spectrum and Telecommunications Sector",
+        "dcterms.modified": "2022-07-28"
+      },
+      "checks": {
+        "complete_title": true,
+        "version_markers": true,
+        "page_modified": true,
+        "source_author": true,
+        "source_creator": true
+      },
+      "passed": true
+    },
+    {
+      "id": "terms",
+      "url": "https://ised-isde.canada.ca/site/ised/en/terms-and-conditions",
+      "expected_title": "Terms and conditions",
+      "title": "Terms and conditions",
+      "resolved_url": "https://ised-isde.canada.ca/site/ised/en/terms-and-conditions",
+      "sha256_html": "48bc1978428bf728aa5f0f61182e109ba28569ed968683882625c78b4f2a6669",
+      "metadata": {
+        "dcterms.creator": "Government of Canada, Innovation, Science and Economic Development Canada, Office of the Deputy Minister, Communications and Marketing Branch",
+        "author": "Communications and Marketing Branch",
+        "dcterms.modified": "2021-06-20"
+      },
+      "checks": {
+        "complete_title": true,
+        "version_markers": true
+      },
+      "passed": true
+    }
+  ],
+  "question_bank": {
+    "url": "https://apc-cap.ic.gc.ca/datafiles/amat_basic_quest.zip",
+    "title": "Basic Qualification Question Bank for Amateur Radio Operator Certificate Examinations",
+    "author": "Innovation, Science and Economic Development Canada (ISED)",
+    "resolved_url": "https://apc-cap.ic.gc.ca/datafiles/amat_basic_quest.zip",
+    "questions": 984,
+    "mismatches": [],
+    "sha256_delimited": "34c7cd7967addfde648c566d0ecf25bf3d1e071c603b5101cfecc7bd0cbc284f",
+    "sha256_zip": "6a22908b32addf2a805d9af0e291d97593c2a9cf84db6e725826ebcd2a2c7210",
+    "checks": {
+      "all_ids_and_counts": true,
+      "english_french_wording_and_answer_keys": true,
+      "topic_count": true,
+      "recorded_source_sha256": true
+    },
+    "passed": true
+  },
+  "passed": true
+}

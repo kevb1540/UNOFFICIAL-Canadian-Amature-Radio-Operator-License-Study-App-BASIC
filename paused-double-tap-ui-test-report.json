@@ -1,0 +1,22 @@
+{
+  "passed": 13,
+  "checks": [
+    "touch double-tapping the later repeated word stays paused and floating Play resumes at that occurrence",
+    "mouse double-clicking an earlier word sets the inline Resume position without starting speech",
+    "the latest double-tapped inline word survives selection dismissal and saved-highlight repainting",
+    "other lessons, controls, dialogs and blank space cannot change a paused restart point",
+    "touch double-tapping while playing immediately reads the exact repeated occurrence with the same voice and speed",
+    "mouse double-clicking while playing immediately jumps backwards and leaves continuous narration playing",
+    "the latest active jump resolves a word split across inline formatting and saved highlights",
+    "a compatibility mouse double-click after touch does not restart the same passage twice",
+    "other lessons, controls, dialogs and blank space cannot jump active speech",
+    "stopped speech ignores double taps without starting audio and releases the touch gesture style",
+    "cancelled, dragged and long-held touch gestures cannot seek active or paused speech",
+    "both caret hit-test APIs resolve the visible word and navigation clears the pending double tap",
+    "No JavaScript errors."
+  ],
+  "errors": [],
+  "real_touch_events_tested": true,
+  "physical_android_gesture_tested": false,
+  "time": "2026-10-30T10:47:28.763Z"
+}

@@ -1,0 +1,23 @@
+{
+  "passed": 9,
+  "checks": [
+    "All 12 government records show complete titles, authors, source versions and explicit copy-of-version URLs.",
+    "Question-bank credit identifies copied wording, effective date, verification date, checksum and original download.",
+    "Original summaries, review scope and government independence are stated accurately.",
+    "All attribution links use HTTPS and retain safe external-browser attributes.",
+    "Attribution is available before login and preserves progress state.",
+    "All 12 chapters include the correct government sources and the original question bank.",
+    "Reference desk shows full government credits and retains all 16 formula links.",
+    "Expanded credits fit 320/393 px phones, landscape and tablet without changing saved study work.",
+    "No JavaScript errors or external requests while reading bundled source credits."
+  ],
+  "errors": [],
+  "externalRequests": [],
+  "layouts": [
+    "320×740",
+    "393×852",
+    "852×393",
+    "800×1280"
+  ],
+  "time": "2026-10-24T11:57:22.782Z"
+}

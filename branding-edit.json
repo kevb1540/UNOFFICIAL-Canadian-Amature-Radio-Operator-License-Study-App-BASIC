@@ -1,0 +1,12 @@
+{
+  "asset": "Android icon and matching header logo",
+  "editing_mode": "Built-in image generation tool, edit mode",
+  "prompt": "Use case: precise-object-edit.\nAsset type: Android app icon and matching small app-header logo.\nInput image: edit target, the existing square Canadian radio workbook icon.\nPrimary request: make the maple leaf in the bottom-right corner vivid Canadian red (#E53935). It is currently orange/gold. Keep it as one maple leaf in that same corner.\nConstraints: preserve the exact flat antenna design, mint radio-wave arcs, orange antenna tip, mint base, dark blue-green background, square canvas, spacing and composition. Preserve the existing leaf shape, stem and placement; change its color to red only. Do not redesign the icon or add lettering, extra objects, gradients, shadows, borders, or another leaf. Keep the background fully opaque. The artwork must stay crisp and readable at small icon sizes. Prefer the original 512 by 512 canvas.",
+  "original_icon_sha256": "c0ee4b4d51917dcba85d7dcf44a43dbd009d847ac5fa4ad7debad656f073536b",
+  "edited_icon_sha256": "f844f81be743005305f707542e43d8bd2c3564defe3c0d6bc1bb659177a78077",
+  "native_icon": "app/src/main/res/drawable-nodpi/icon.png",
+  "matching_header_logo": "app/src/main/assets/app-icon.png",
+  "image_background": "Opaque; original dark palette preserved",
+  "maple_leaf": "Red, bottom-right corner",
+  "android_density": "nodpi: avoid scaling up the bitmap for device density"
+}

@@ -1,0 +1,7 @@
+{
+  "android_api": 35,
+  "physical_device": false,
+  "checks": [],
+  "passed": false,
+  "error": "Android did not boot within seven minutes"
+}

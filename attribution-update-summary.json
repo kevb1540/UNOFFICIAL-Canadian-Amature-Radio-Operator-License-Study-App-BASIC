@@ -1,0 +1,19 @@
+{
+  "source_update": "Government-source accuracy and attribution",
+  "date": "2026-10-24",
+  "apk_rebuilt": true,
+  "android_version_changed": true,
+  "government_reference_pages_checked": 12,
+  "terms_page_checked": true,
+  "official_questions_compared": 984,
+  "official_topics_compared": 100,
+  "bilingual_wording_and_answer_keys_match": true,
+  "official_data_sha256_matches": true,
+  "core_checks_passed": 32,
+  "attribution_ui_checks_passed": 9,
+  "data_regeneration_preserves_attribution": true,
+  "questions_json_sha256": "4e2b8632d0820de8a6cba44c3e0e92c449f106783a598e8b466914d5b951d3a3",
+  "existing_lessons_glossary_formulas_and_labs_unchanged": true,
+  "full_study_ui_suite": "Not fully passing in this runtime; see VALIDATION.md. Targeted attribution UI and core checks passed.",
+  "included_in_version": "2.3.12"
+}

@@ -1,0 +1,19 @@
+{
+  "title": "Basic Qualification Question Bank for Amateur Radio Operator Certificate Examinations",
+  "author": "Innovation, Science and Economic Development Canada (ISED)",
+  "effective": "2025-07-15",
+  "retrieved": "2026-10-14",
+  "count": 984,
+  "topics": 100,
+  "source": "https://apc-cap.ic.gc.ca/datafiles/amat_basic_quest.zip",
+  "downloads": "https://ised-isde.canada.ca/site/amateur-radio-operator-certificate-services/en/downloads",
+  "pdf": "https://ised-isde.canada.ca/site/amateur-radio-operator-certificate-services/sites/default/files/documents/amateur_basic_questions_en_2025-07-15.pdf",
+  "terms": "https://ised-isde.canada.ca/site/ised/en/terms-and-conditions",
+  "sha256_delimited": "34c7cd7967addfde648c566d0ecf25bf3d1e071c603b5101cfecc7bd0cbc284f",
+  "notice": "Non-commercial study reproduction. This reproduction is a copy of the version available at https://apc-cap.ic.gc.ca/datafiles/amat_basic_quest.zip. Original English and French question and answer wording and ISED answer keys are retained; answer positions may be randomized. Independent app; not produced or endorsed by ISED.",
+  "verified": "2026-10-24",
+  "copyright_owner": "Government of Canada (Crown copyright)",
+  "reproduction_statement": "This reproduction is a copy of the version available at",
+  "reproduction_url": "https://apc-cap.ic.gc.ca/datafiles/amat_basic_quest.zip",
+  "verification_method": "All 984 question IDs, English and French question and answer strings, correct-answer positions and 100 topic groups compared with the official delimited download; no differences. The source SHA-256 also matches."
+}

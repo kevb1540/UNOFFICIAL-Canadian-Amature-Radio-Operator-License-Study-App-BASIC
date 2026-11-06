@@ -1,0 +1,20 @@
+/* ©️ Kevin W. Brown 2026 — Small header shortcut and full-page offline help. */
+.header-shortcuts{display:flex;flex-direction:column;align-items:stretch;gap:4px;flex-shrink:0}
+.header-shortcuts[hidden]{display:none}
+#help-shortcut{min-height:28px;padding:3px 8px;border:1px solid #d99bb5;border-radius:8px;background:#fce1eb;color:#4c1730;font-size:.68rem;font-weight:800;line-height:1.2;letter-spacing:.05em;cursor:pointer}
+#help-shortcut:focus-visible{outline:3px solid var(--accent);outline-offset:2px}
+html.help-open,body.help-open{overflow:hidden}
+#help-dialog{position:fixed;inset:0;margin:0;width:100%;max-width:none;height:100vh;height:100dvh;max-height:100vh;max-height:100dvh;padding:0;border:0;border-radius:0;background:var(--bg);color:var(--text);overflow:auto;overscroll-behavior:contain}
+#help-dialog::backdrop{background:var(--bg)}
+.help-topbar{position:sticky;top:0;z-index:1;max-width:900px;margin:0 auto;padding:16px 20px;border-bottom:1px solid var(--line);background:var(--bg)}
+.help-titlebar{display:flex;align-items:center;gap:16px}
+.help-topbar h1{font-size:1.6rem;margin:0}.help-topbar .btn{min-height:44px}
+.help-search{margin-top:12px}.help-search label{display:block;font-size:.85rem;font-weight:700;margin-bottom:6px}
+.help-search-controls{display:flex;align-items:center;gap:8px}.help-search-controls input{flex:1;min-width:0;width:100%;min-height:44px;font-size:1rem}
+#help-search-status{margin:6px 0 0;font-size:.8rem}.help-topic[hidden],#help-no-results[hidden]{display:none}
+.help-content{max-width:900px;margin:0 auto;padding:20px 20px 50px;overflow-wrap:anywhere}
+.help-content>.lead{margin-top:0}.help-topic{margin:14px 0;border:1px solid var(--line);border-radius:13px;background:var(--panel)}
+.help-topic>summary{padding:15px 16px;font-size:.95rem;font-weight:750;cursor:pointer;line-height:1.5}
+.help-topic>div{padding:0 16px 12px}.help-topic p,.help-topic li{font-size:.9rem;line-height:1.65}.help-topic ul,.help-topic ol{padding-left:24px}.help-topic li+li{margin-top:7px}
+.help-footer{margin-top:30px;padding-top:18px;border-top:1px solid var(--line)}
+@media(max-width:360px){.help-topbar{padding:12px 14px}.help-content{padding:16px 14px 40px}}

@@ -1,0 +1,24 @@
+{
+  "app": "Canadian Amature Radio Unofficial Basic Certificate Study Guide And Reference",
+  "version": "2.3.45",
+  "version_code": 275,
+  "package": "ca.kevin.maplewave",
+  "min_sdk": 26,
+  "target_sdk": 36,
+  "architectures": "All Android ABIs; no native libraries",
+  "official_questions": 984,
+  "topic_groups": 100,
+  "glossary_terms": 223,
+  "on_air_terms": 61,
+  "covered_questions": 984,
+  "detailed_lessons": 100,
+  "lesson_coverage_verified": true,
+  "apk_bytes": 4493501,
+  "apk_sha256": "ef6c4cede778d7c1e86e657761bfdb6cc23c747513be98567b6b9a87d122c05c",
+  "permissions": [
+    "android.permission.REQUEST_INSTALL_PACKAGES",
+    "android.permission.INTERNET"
+  ],
+  "profiles": "Password-encrypted local users with optional configured email recovery",
+  "physical_device_tested": false
+}

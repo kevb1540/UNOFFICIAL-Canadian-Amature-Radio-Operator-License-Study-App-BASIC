@@ -1,0 +1,20 @@
+// Optional CLI configuration; dashboards do not require this file.
+{
+  "name": "radio-recovery",
+  "main": "worker.js",
+  "compatibility_date": "2026-10-16",
+  "workers_dev": true,
+  "d1_databases": [
+    {
+      "binding": "DB",
+      "database_name": "radio-recovery",
+      "database_id": "REPLACE_WITH_YOUR_D1_DATABASE_ID"
+    }
+  ],
+  "vars": {
+    "SENDER_EMAIL": "replace-with-verified-sender@example.com",
+    "ALLOWED_EMAILS": "replace-with-your-profile-email@example.com",
+    "SENDER_NAME": "Kevin’s Radio Workbook"
+  }
+  // Set BREVO_API_KEY and RECOVERY_MASTER_KEY as secrets, never here.
+}

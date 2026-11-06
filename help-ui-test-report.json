@@ -1,0 +1,25 @@
+{
+  "passed": 17,
+  "checks": [
+    "Help follows Glossary visibility and returns to an unsigned profile form without losing entered fields",
+    "the small HELP shortcut is below Glossary with a pale-pink background and dark lettering",
+    "offline Help covers app functions and keeps Back at the top while its topics scroll",
+    "search finds instructions inside closed topics and opens matching results as you type",
+    "search ignores case, accents and extra spaces and supports words in any order",
+    "unmatched or literal markup searches show a helpful empty state without changing Help content",
+    "Clear restores all topics and their earlier expansion state while keeping keyboard focus in search",
+    "reopening Help resets its search and the mobile search and Back controls stay visible when results scroll",
+    "Back restores the exact mounted lesson, expanded sections, visible answer and scroll position after searching Help",
+    "Help preserves a personal-note draft, textarea scroll, focus and selection without rebuilding the editor",
+    "Android Back from Help returns to the same quiz question, answer, flag and open navigator",
+    "Escape closes Help without losing glossary search/filter state",
+    "active narration resumes after Help and an already-paused double-tap restart stays paused at its chosen word",
+    "letter recordings pause in Help and resume at the same playback time",
+    "a guided antenna animation holds its values in Help and continues with the same lab controls",
+    "the shortcut and full Help page fit phone, landscape and tablet layouts in light and dark themes",
+    "No JavaScript errors."
+  ],
+  "errors": [],
+  "physical_android_tested": false,
+  "time": "2026-10-30T10:46:54.796Z"
+}

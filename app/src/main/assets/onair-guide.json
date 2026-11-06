@@ -1,0 +1,1063 @@
+{
+  "version": 1,
+  "title": "On-air terms & phrases",
+  "copyright": "©️ Kevin W. Brown 2026",
+  "intro": "Understand the words you hear during amateur radio conversations. Search a term, read its meaning, and see a short example of how it is used.",
+  "guidance": [
+    "Plain language works well on voice. Q codes began as compact signals for telegraphy; some are common in speech, while speed requests such as QRS mainly belong to Morse operation.",
+    "Listen before speaking and leave pauses for other stations. The call signs in square brackets are placeholders for the actual station identities.",
+    "A question mark changes a written or Morse Q signal into a question. In spoken conversation, use a clear question or statement rather than relying on punctuation you cannot hear."
+  ],
+  "groups": [
+    {
+      "id": "calling",
+      "title": "Calling & contacts"
+    },
+    {
+      "id": "q-codes",
+      "title": "Q codes"
+    },
+    {
+      "id": "reports",
+      "title": "Signal reports"
+    },
+    {
+      "id": "voice",
+      "title": "Voice phrases & spelling"
+    },
+    {
+      "id": "nets",
+      "title": "Repeaters & nets"
+    },
+    {
+      "id": "closing",
+      "title": "Signing off"
+    }
+  ],
+  "entries": [
+    {
+      "id": "cq",
+      "term": "CQ",
+      "group": "calling",
+      "meaning": "A general call inviting another amateur station to answer.",
+      "example": "CQ CQ, this is [your call sign], calling CQ and listening.",
+      "note": "Listen and check that a frequency is available before calling. On a local repeater, announcing your call sign and monitoring is usually more appropriate.",
+      "aliases": [],
+      "question": "",
+      "statement": ""
+    },
+    {
+      "id": "cq-dx",
+      "term": "CQ DX",
+      "group": "calling",
+      "meaning": "A general call asking for distant stations, often outside the caller’s own region or country.",
+      "example": "CQ DX, this is [your call sign].",
+      "note": "What counts as DX depends on the band and the caller’s stated target. Listen to any geographic restrictions.",
+      "aliases": [
+        "long distance"
+      ],
+      "question": "",
+      "statement": ""
+    },
+    {
+      "id": "cq-contest",
+      "term": "CQ contest",
+      "group": "calling",
+      "meaning": "A call seeking short contacts in a radio contest.",
+      "example": "CQ contest, this is [your call sign].",
+      "note": "Listen for the required exchange and read that contest’s rules before joining.",
+      "aliases": [
+        "contesting"
+      ],
+      "question": "",
+      "statement": ""
+    },
+    {
+      "id": "call-sign",
+      "term": "Call sign",
+      "group": "calling",
+      "meaning": "The station identifier assigned for amateur operation. Use it to identify yourself and the station you are calling.",
+      "example": "[Other call sign], this is [your call sign].",
+      "note": "Give your actual assigned call sign. Names and nicknames do not replace station identification.",
+      "aliases": [
+        "callsign",
+        "station identification"
+      ],
+      "question": "",
+      "statement": ""
+    },
+    {
+      "id": "this-is",
+      "term": "This is",
+      "group": "calling",
+      "meaning": "Introduces the identity of the station speaking.",
+      "example": "[Other call sign], this is [your call sign].",
+      "note": "Putting the called station first and your own identity second makes the direction of a call clear.",
+      "aliases": [],
+      "question": "",
+      "statement": ""
+    },
+    {
+      "id": "monitoring",
+      "term": "Monitoring",
+      "group": "calling",
+      "meaning": "Listening on a frequency and available to answer a call.",
+      "example": "[Your call sign] monitoring.",
+      "note": "Common on repeaters. It announces your presence without a long CQ call.",
+      "aliases": [
+        "listening",
+        "on frequency"
+      ],
+      "question": "",
+      "statement": ""
+    },
+    {
+      "id": "qso",
+      "term": "QSO",
+      "group": "calling",
+      "meaning": "A radio contact or conversation between stations.",
+      "example": "Thanks for the QSO.",
+      "note": "In casual speech, having a QSO means making a contact; the formal Q signal concerns communication with another station.",
+      "aliases": [
+        "contact",
+        "conversation"
+      ],
+      "question": "",
+      "statement": ""
+    },
+    {
+      "id": "dx",
+      "term": "DX",
+      "group": "calling",
+      "meaning": "A distant station or a long-distance contact.",
+      "example": "I heard some DX on the band this morning.",
+      "note": "Distance is relative to the band and conditions; DX does not always mean another country.",
+      "aliases": [
+        "distant station"
+      ],
+      "question": "",
+      "statement": ""
+    },
+    {
+      "id": "ragchew",
+      "term": "Ragchew",
+      "group": "calling",
+      "meaning": "A relaxed, extended conversation over amateur radio.",
+      "example": "Would you like a short ragchew?",
+      "note": "Keep listening for other callers and leave gaps so the frequency can be shared.",
+      "aliases": [
+        "rag chew",
+        "chat"
+      ],
+      "question": "",
+      "statement": ""
+    },
+    {
+      "id": "elmer",
+      "term": "Elmer",
+      "group": "calling",
+      "meaning": "An experienced amateur who helps someone learn the hobby.",
+      "example": "My Elmer helped me set up the antenna.",
+      "note": "It is a friendly mentoring term, not a certificate or official position.",
+      "aliases": [
+        "mentor",
+        "beginner help"
+      ],
+      "question": "",
+      "statement": ""
+    },
+    {
+      "id": "exchange",
+      "term": "Exchange",
+      "group": "calling",
+      "meaning": "The specific information passed during a contact, especially in a contest.",
+      "example": "Please repeat the serial number in your exchange.",
+      "note": "An exchange may include a signal report, number or location; each event defines its own required information.",
+      "aliases": [
+        "contest exchange",
+        "serial number"
+      ],
+      "question": "",
+      "statement": ""
+    },
+    {
+      "id": "pileup",
+      "term": "Pileup",
+      "group": "calling",
+      "meaning": "Many stations trying to contact the same station at once.",
+      "example": "There is a pileup calling that DX station.",
+      "note": "Listen to whom the station is answering and whether it has announced split operation. Avoid calling over an existing reply.",
+      "aliases": [
+        "pile-up",
+        "dx pileup"
+      ],
+      "question": "",
+      "statement": ""
+    },
+    {
+      "id": "qrl",
+      "term": "QRL?",
+      "group": "q-codes",
+      "meaning": "Asks whether the frequency is in use.",
+      "example": "On voice: Is this frequency in use? This is [your call sign].",
+      "note": "A question mark makes the written or Morse Q signal a question. Plain language is clear on voice.",
+      "aliases": [
+        "frequency in use",
+        "busy"
+      ],
+      "question": "Are you busy / is this frequency in use?",
+      "statement": "QRL: I am busy / the frequency is in use."
+    },
+    {
+      "id": "qrz",
+      "term": "QRZ?",
+      "group": "q-codes",
+      "meaning": "Asks which station is calling you.",
+      "example": "QRZ? Please give your call sign again.",
+      "note": "It is not a general test for an empty frequency; use Is this frequency in use? or QRL? for that.",
+      "aliases": [
+        "who is calling",
+        "qrz"
+      ],
+      "question": "Who is calling me?",
+      "statement": "QRZ: You are being called by the named station."
+    },
+    {
+      "id": "qsy",
+      "term": "QSY",
+      "group": "q-codes",
+      "meaning": "Change to another frequency.",
+      "example": "Let’s QSY to an agreed clear frequency.",
+      "note": "Check that the new frequency is available and suitable before transmitting.",
+      "aliases": [
+        "change frequency",
+        "move frequency"
+      ],
+      "question": "Shall I change frequency?",
+      "statement": "Change frequency / I am changing frequency."
+    },
+    {
+      "id": "qth",
+      "term": "QTH",
+      "group": "q-codes",
+      "meaning": "Your station’s location.",
+      "example": "My QTH is Mississauga, Ontario.",
+      "note": "A town or general location is normally enough for a casual conversation; you need not give a private street address.",
+      "aliases": [
+        "location",
+        "where are you"
+      ],
+      "question": "What is your location?",
+      "statement": "My location is the place stated."
+    },
+    {
+      "id": "qsl",
+      "term": "QSL",
+      "group": "q-codes",
+      "meaning": "Acknowledges reception; also refers to confirming a radio contact.",
+      "example": "QSL, I copied your report.",
+      "note": "A QSL card or electronic QSL is a contact confirmation, which is a different use from an immediate on-air acknowledgement.",
+      "aliases": [
+        "confirmation",
+        "acknowledgement",
+        "qsl card"
+      ],
+      "question": "Can you acknowledge receipt?",
+      "statement": "I acknowledge receipt."
+    },
+    {
+      "id": "qrm",
+      "term": "QRM",
+      "group": "q-codes",
+      "meaning": "Interference from another radio transmission.",
+      "example": "I have QRM from a nearby signal.",
+      "note": "Distinguish interfering signals from atmospheric noise (QRN) and fading (QSB).",
+      "aliases": [
+        "interference",
+        "other station"
+      ],
+      "question": "Are other signals interfering?",
+      "statement": "Other signals are interfering."
+    },
+    {
+      "id": "qrn",
+      "term": "QRN",
+      "group": "q-codes",
+      "meaning": "Atmospheric static or noise, commonly associated with lightning.",
+      "example": "There is heavy QRN tonight.",
+      "note": "Local electrical noise can also mask a station; describe it directly if you are unsure of the source.",
+      "aliases": [
+        "static",
+        "atmospheric noise"
+      ],
+      "question": "Are you troubled by atmospheric noise?",
+      "statement": "I am troubled by atmospheric noise."
+    },
+    {
+      "id": "qsb",
+      "term": "QSB",
+      "group": "q-codes",
+      "meaning": "Received signal strength is fading or changing with time.",
+      "example": "Your signal has QSB; please repeat the last sentence.",
+      "note": "A fading signal may be strong for one moment and difficult to copy a few seconds later.",
+      "aliases": [
+        "fading",
+        "fade"
+      ],
+      "question": "Is my signal fading?",
+      "statement": "Your signal is fading."
+    },
+    {
+      "id": "qrp",
+      "term": "QRP",
+      "group": "q-codes",
+      "meaning": "Reduce power; also the name commonly used for low-power operating.",
+      "example": "I am running QRP today.",
+      "note": "Specific low-power limits depend on the activity or contest. The term does not create a separate operating privilege.",
+      "aliases": [
+        "low power",
+        "reduce power"
+      ],
+      "question": "Shall I reduce power?",
+      "statement": "Reduce power."
+    },
+    {
+      "id": "qro",
+      "term": "QRO",
+      "group": "q-codes",
+      "meaning": "Increase power; also shorthand for higher-power operation.",
+      "example": "I can increase power if that would help readability.",
+      "note": "Use only the power appropriate to the contact and your authorization.",
+      "aliases": [
+        "high power",
+        "increase power"
+      ],
+      "question": "Shall I increase power?",
+      "statement": "Increase power."
+    },
+    {
+      "id": "qrt",
+      "term": "QRT",
+      "group": "q-codes",
+      "meaning": "Stop transmitting; often used when closing down an operating session.",
+      "example": "I am going QRT now. Thanks for the contact.",
+      "note": "It describes ending transmissions, not a change to another frequency.",
+      "aliases": [
+        "going off air",
+        "stop transmitting"
+      ],
+      "question": "Shall I stop transmitting?",
+      "statement": "Stop transmitting."
+    },
+    {
+      "id": "qrx",
+      "term": "QRX",
+      "group": "q-codes",
+      "meaning": "Wait; in formal use it relates to when a station will call again.",
+      "example": "QRX one minute, please.",
+      "note": "You may hear it used casually to mean stand by. On voice, specifying the waiting time in plain language is helpful.",
+      "aliases": [
+        "wait",
+        "standby"
+      ],
+      "question": "When will you call me again?",
+      "statement": "I will call again at the stated time; commonly used as wait."
+    },
+    {
+      "id": "qrv",
+      "term": "QRV",
+      "group": "q-codes",
+      "meaning": "Ready to communicate or receive the next transmission.",
+      "example": "I am QRV for the net.",
+      "note": "Ready is a clear voice alternative.",
+      "aliases": [
+        "ready"
+      ],
+      "question": "Are you ready?",
+      "statement": "I am ready."
+    },
+    {
+      "id": "qrq",
+      "term": "QRQ",
+      "group": "q-codes",
+      "meaning": "Send Morse code faster.",
+      "example": "QRQ slightly, please.",
+      "note": "This is a Morse-speed request. For voice, say that you can copy a faster speaking pace if needed.",
+      "aliases": [
+        "send faster",
+        "morse speed"
+      ],
+      "question": "Shall I send faster?",
+      "statement": "Send faster."
+    },
+    {
+      "id": "qrs",
+      "term": "QRS",
+      "group": "q-codes",
+      "meaning": "Send Morse code more slowly.",
+      "example": "QRS please.",
+      "note": "For spoken communication, Please speak more slowly is clearer than using a Morse-speed signal.",
+      "aliases": [
+        "send slower",
+        "slow down"
+      ],
+      "question": "Shall I send more slowly?",
+      "statement": "Send more slowly."
+    },
+    {
+      "id": "qsx",
+      "term": "QSX",
+      "group": "q-codes",
+      "meaning": "Listening on another stated frequency.",
+      "example": "The DX station says QSX five kilohertz up.",
+      "note": "Listen for the exact receive frequency or range. In split operation, the called station’s listening frequency is where callers transmit.",
+      "aliases": [
+        "listening up",
+        "split",
+        "split frequency"
+      ],
+      "question": "Will you listen on the stated frequency?",
+      "statement": "I am listening on the stated frequency."
+    },
+    {
+      "id": "signal-report",
+      "term": "Signal report",
+      "group": "reports",
+      "meaning": "A description of how well another station is being received.",
+      "example": "You are readable, but your signal is fading.",
+      "note": "Describe what you actually hear. A meter reading alone does not explain readability.",
+      "aliases": [
+        "readability",
+        "report"
+      ],
+      "question": "",
+      "statement": ""
+    },
+    {
+      "id": "rs",
+      "term": "RS",
+      "group": "reports",
+      "meaning": "A voice signal report giving readability (1–5) and signal strength (1–9).",
+      "example": "Your report is five and seven.",
+      "note": "The first number tells how easy the speech is to understand. The second describes received signal strength.",
+      "aliases": [
+        "readability strength",
+        "voice report"
+      ],
+      "question": "",
+      "statement": ""
+    },
+    {
+      "id": "rst",
+      "term": "RST",
+      "group": "reports",
+      "meaning": "Readability, signal strength and tone: a three-part report used especially for Morse code.",
+      "example": "Your Morse signal is five nine nine.",
+      "note": "Readability uses 1–5, strength 1–9, and tone 1–9. Voice normally omits the tone digit and uses RS.",
+      "aliases": [
+        "readability signal strength tone"
+      ],
+      "question": "",
+      "statement": ""
+    },
+    {
+      "id": "five-nine",
+      "term": "59 (five nine)",
+      "group": "reports",
+      "meaning": "An RS report: readability 5 and signal strength 9.",
+      "example": "You are five nine here.",
+      "note": "It does not mean 59 percent. Do not automatically give 59 if you cannot actually read the station.",
+      "aliases": [
+        "5 by 9",
+        "five by nine",
+        "five and nine",
+        "five nine",
+        "59"
+      ],
+      "question": "",
+      "statement": ""
+    },
+    {
+      "id": "five-nine-nine",
+      "term": "599 (five nine nine)",
+      "group": "reports",
+      "meaning": "An RST report: readability 5, strength 9, tone 9.",
+      "example": "Thanks, your RST is five nine nine.",
+      "note": "The third digit describes Morse tone quality. Voice normally uses two digits. In Morse contest reports, N may stand for 9, so 5NN means 599.",
+      "aliases": [
+        "5nn",
+        "five nine nine",
+        "599"
+      ],
+      "question": "",
+      "statement": ""
+    },
+    {
+      "id": "full-quieting",
+      "term": "Full quieting",
+      "group": "reports",
+      "meaning": "An FM signal strong enough to suppress the background hiss in the receiver.",
+      "example": "You are full quieting into the repeater.",
+      "note": "It describes received FM noise, not guaranteed maximum readability or a universal S-meter value.",
+      "aliases": [
+        "quieting",
+        "no hiss"
+      ],
+      "question": "",
+      "statement": ""
+    },
+    {
+      "id": "doubling",
+      "term": "Doubling",
+      "group": "reports",
+      "meaning": "Two stations transmitting at the same time on a shared channel.",
+      "example": "We doubled; please go ahead first.",
+      "note": "Pause and let one station speak. FM receivers may favour one signal, so the overlap may not be obvious to everyone.",
+      "aliases": [
+        "double",
+        "talking over",
+        "simultaneous transmissions"
+      ],
+      "question": "",
+      "statement": ""
+    },
+    {
+      "id": "radio-check",
+      "term": "Radio check",
+      "group": "reports",
+      "meaning": "A request for a report on how your transmission is being received.",
+      "example": "[Your call sign], could someone give me a radio check?",
+      "note": "Ask about the problem you are testing, such as intelligibility, audio level or repeater access.",
+      "aliases": [
+        "signal check",
+        "audio check"
+      ],
+      "question": "",
+      "statement": ""
+    },
+    {
+      "id": "roger",
+      "term": "Roger",
+      "group": "voice",
+      "meaning": "Your transmission or message was received.",
+      "example": "Roger, I copied the location.",
+      "note": "It acknowledges reception; it does not by itself mean yes or I agree.",
+      "aliases": [
+        "received"
+      ],
+      "question": "",
+      "statement": ""
+    },
+    {
+      "id": "copy",
+      "term": "Copy",
+      "group": "voice",
+      "meaning": "Receive and understand what another station has said or sent.",
+      "example": "I copied the call sign, but missed your name.",
+      "note": "If only part was understood, say which part needs repeating.",
+      "aliases": [
+        "copied",
+        "understood"
+      ],
+      "question": "",
+      "statement": ""
+    },
+    {
+      "id": "say-again",
+      "term": "Say again",
+      "group": "voice",
+      "meaning": "A request to repeat all or a specific part of a transmission.",
+      "example": "Say again the last three letters of your call sign.",
+      "note": "Naming the missing part saves time and avoids repeating information already understood.",
+      "aliases": [
+        "repeat",
+        "repeat please"
+      ],
+      "question": "",
+      "statement": ""
+    },
+    {
+      "id": "i-spell",
+      "term": "I spell",
+      "group": "voice",
+      "meaning": "Introduces spelling with phonetic words so letters can be understood.",
+      "example": "My name is Kevin. I spell Kilo Echo Victor India November.",
+      "note": "Use standard phonetics when clarity matters, especially for call signs and names.",
+      "aliases": [
+        "spell",
+        "phonetics"
+      ],
+      "question": "",
+      "statement": ""
+    },
+    {
+      "id": "affirmative",
+      "term": "Affirmative",
+      "group": "voice",
+      "meaning": "Yes.",
+      "example": "Affirmative, I can hear you.",
+      "note": "It is an answer to a question, unlike Roger, which acknowledges reception.",
+      "aliases": [
+        "yes"
+      ],
+      "question": "",
+      "statement": ""
+    },
+    {
+      "id": "negative",
+      "term": "Negative",
+      "group": "voice",
+      "meaning": "No, or a correction rejecting an incorrect detail.",
+      "example": "Negative, the last letter is Bravo.",
+      "note": "Add the correct detail when a mistake could cause confusion.",
+      "aliases": [
+        "no",
+        "incorrect"
+      ],
+      "question": "",
+      "statement": ""
+    },
+    {
+      "id": "over",
+      "term": "Over",
+      "group": "voice",
+      "meaning": "I have finished this transmission and expect a reply.",
+      "example": "That is my report, over.",
+      "note": "Useful when turn-taking is unclear. Over and out expresses conflicting expectations; use the ending appropriate to your intention.",
+      "aliases": [
+        "your turn",
+        "expecting reply"
+      ],
+      "question": "",
+      "statement": ""
+    },
+    {
+      "id": "out",
+      "term": "Out",
+      "group": "voice",
+      "meaning": "The exchange is finished and no reply is expected.",
+      "example": "Message complete, out.",
+      "note": "Not needed at the end of every casual amateur transmission. Clear is also commonly heard when ending a contact.",
+      "aliases": [
+        "no reply expected"
+      ],
+      "question": "",
+      "statement": ""
+    },
+    {
+      "id": "stand-by",
+      "term": "Stand by",
+      "group": "voice",
+      "meaning": "Wait briefly before continuing or answering.",
+      "example": "Stand by while I write that down.",
+      "note": "If practical, give an approximate wait time.",
+      "aliases": [
+        "standby",
+        "wait"
+      ],
+      "question": "",
+      "statement": ""
+    },
+    {
+      "id": "go-ahead",
+      "term": "Go ahead",
+      "group": "voice",
+      "meaning": "An invitation for the other station to transmit.",
+      "example": "The station ending in Bravo, go ahead.",
+      "note": "Identify whom you are inviting if several stations are waiting.",
+      "aliases": [
+        "please transmit"
+      ],
+      "question": "",
+      "statement": ""
+    },
+    {
+      "id": "break",
+      "term": "Break",
+      "group": "voice",
+      "meaning": "A request to enter an ongoing conversation, with local usage varying.",
+      "example": "[Your call sign], may I join you?",
+      "note": "On a repeater, give your call sign in a gap. Do not assume Break or Break break alone reliably communicates an emergency.",
+      "aliases": [
+        "break in",
+        "break break",
+        "interrupt"
+      ],
+      "question": "",
+      "statement": ""
+    },
+    {
+      "id": "back-to-you",
+      "term": "Back to you",
+      "group": "voice",
+      "meaning": "Returns the speaking turn to another station.",
+      "example": "That is all from me. Back to you, [other call sign].",
+      "note": "In a group, name the next station so everyone knows whose turn it is.",
+      "aliases": [
+        "hand back",
+        "turn taking"
+      ],
+      "question": "",
+      "statement": ""
+    },
+    {
+      "id": "phonetic-alphabet",
+      "term": "Phonetic alphabet",
+      "group": "voice",
+      "meaning": "A standard word for each letter, used to spell call signs and other information clearly.",
+      "example": "I spell Alfa Bravo Charlie.",
+      "note": "Standard spellings include Alfa and Juliett. The reference table below lists all 26 words.",
+      "aliases": [
+        "nato alphabet",
+        "itu alphabet",
+        "alpha",
+        "juliet"
+      ],
+      "question": "",
+      "statement": ""
+    },
+    {
+      "id": "net",
+      "term": "Net",
+      "group": "nets",
+      "meaning": "An organized on-air gathering of stations.",
+      "example": "The local net starts this evening.",
+      "note": "A directed net uses a coordinator; a round-table conversation may use informal turn-taking.",
+      "aliases": [
+        "radio net",
+        "round table"
+      ],
+      "question": "",
+      "statement": ""
+    },
+    {
+      "id": "ncs",
+      "term": "NCS",
+      "group": "nets",
+      "meaning": "Net control station: the station coordinating a directed net.",
+      "example": "Net control, this is [your call sign] with a check-in.",
+      "note": "Follow the net control station’s check-in instructions and wait to be recognized.",
+      "aliases": [
+        "net control",
+        "net control station"
+      ],
+      "question": "",
+      "statement": ""
+    },
+    {
+      "id": "check-in",
+      "term": "Check-in",
+      "group": "nets",
+      "meaning": "Registering your presence with a net.",
+      "example": "[Your call sign], Kevin, Mississauga, no traffic.",
+      "note": "Supply the information requested by that net. Some nets invite particular groups of stations in sequence.",
+      "aliases": [
+        "check in",
+        "checking in",
+        "roll call"
+      ],
+      "question": "",
+      "statement": ""
+    },
+    {
+      "id": "traffic",
+      "term": "Traffic",
+      "group": "nets",
+      "meaning": "Messages or information a station needs to pass, often through an organized net.",
+      "example": "[Your call sign] with one item of traffic.",
+      "note": "No traffic means no message to pass; it does not mean the frequency is empty.",
+      "aliases": [
+        "message",
+        "no traffic"
+      ],
+      "question": "",
+      "statement": ""
+    },
+    {
+      "id": "emergency-traffic",
+      "term": "Emergency traffic",
+      "group": "nets",
+      "meaning": "An urgent communication involving an immediate threat to life or serious danger.",
+      "example": "Emergency traffic. [Your call sign]. I need assistance for an immediate danger at [location].",
+      "note": "State the emergency plainly, give the location and say what help is needed. Let genuine emergency communications take priority.",
+      "aliases": [
+        "emergency",
+        "priority traffic"
+      ],
+      "question": "",
+      "statement": ""
+    },
+    {
+      "id": "mobile",
+      "term": "Mobile",
+      "group": "nets",
+      "meaning": "Operating from a vehicle, often while travelling.",
+      "example": "[Your call sign] mobile.",
+      "note": "It describes the station’s situation; use your normal assigned identity and appropriate safe operating practices.",
+      "aliases": [
+        "vehicle"
+      ],
+      "question": "",
+      "statement": ""
+    },
+    {
+      "id": "portable",
+      "term": "Portable",
+      "group": "nets",
+      "meaning": "Operating away from a usual fixed station, such as from a park or temporary site.",
+      "example": "[Your call sign] portable at the park.",
+      "note": "Portable describes the location or setup; it does not automatically mean low power.",
+      "aliases": [
+        "temporary station",
+        "field operation"
+      ],
+      "question": "",
+      "statement": ""
+    },
+    {
+      "id": "simplex",
+      "term": "Simplex",
+      "group": "nets",
+      "meaning": "A direct amateur conversation in which stations normally share the same transmit and receive frequency.",
+      "example": "Shall we move to simplex?",
+      "note": "Agree on a suitable clear channel first. This is different from a typical repeater’s separate input and output frequencies.",
+      "aliases": [
+        "direct",
+        "radio to radio"
+      ],
+      "question": "",
+      "statement": ""
+    },
+    {
+      "id": "repeater",
+      "term": "Repeater",
+      "group": "nets",
+      "meaning": "A station that receives and retransmits signals to extend coverage.",
+      "example": "You are reaching the repeater clearly.",
+      "note": "Listen first, leave pauses, and announce your call sign rather than keying it anonymously.",
+      "aliases": [
+        "repeater input",
+        "repeater output",
+        "kerchunk"
+      ],
+      "question": "",
+      "statement": ""
+    },
+    {
+      "id": "73",
+      "term": "73",
+      "group": "closing",
+      "meaning": "A friendly closing meaning best regards.",
+      "example": "Thanks for the contact. Seventy-three, [your call sign].",
+      "note": "Common in both voice and Morse communication.",
+      "aliases": [
+        "seventy three",
+        "best regards"
+      ],
+      "question": "",
+      "statement": ""
+    },
+    {
+      "id": "88",
+      "term": "88",
+      "group": "closing",
+      "meaning": "An affectionate closing traditionally meaning love and kisses.",
+      "example": "You may hear a familiar operator finish with eighty-eight.",
+      "note": "It is more personal than 73 and is not a standard ending for every contact.",
+      "aliases": [
+        "eighty eight",
+        "love and kisses"
+      ],
+      "question": "",
+      "statement": ""
+    },
+    {
+      "id": "clear",
+      "term": "Clear",
+      "group": "closing",
+      "meaning": "Finished with a contact or releasing the channel.",
+      "example": "[Your call sign] clear, and listening.",
+      "note": "Clear and listening means you have ended that contact but remain available; clear and going off means you are leaving.",
+      "aliases": [
+        "signing off",
+        "clear and listening",
+        "clear and going off"
+      ],
+      "question": "",
+      "statement": ""
+    }
+  ],
+  "phonetics": [
+    {
+      "letter": "A",
+      "word": "Alfa"
+    },
+    {
+      "letter": "B",
+      "word": "Bravo"
+    },
+    {
+      "letter": "C",
+      "word": "Charlie"
+    },
+    {
+      "letter": "D",
+      "word": "Delta"
+    },
+    {
+      "letter": "E",
+      "word": "Echo"
+    },
+    {
+      "letter": "F",
+      "word": "Foxtrot"
+    },
+    {
+      "letter": "G",
+      "word": "Golf"
+    },
+    {
+      "letter": "H",
+      "word": "Hotel"
+    },
+    {
+      "letter": "I",
+      "word": "India"
+    },
+    {
+      "letter": "J",
+      "word": "Juliett"
+    },
+    {
+      "letter": "K",
+      "word": "Kilo"
+    },
+    {
+      "letter": "L",
+      "word": "Lima"
+    },
+    {
+      "letter": "M",
+      "word": "Mike"
+    },
+    {
+      "letter": "N",
+      "word": "November"
+    },
+    {
+      "letter": "O",
+      "word": "Oscar"
+    },
+    {
+      "letter": "P",
+      "word": "Papa"
+    },
+    {
+      "letter": "Q",
+      "word": "Quebec"
+    },
+    {
+      "letter": "R",
+      "word": "Romeo"
+    },
+    {
+      "letter": "S",
+      "word": "Sierra"
+    },
+    {
+      "letter": "T",
+      "word": "Tango"
+    },
+    {
+      "letter": "U",
+      "word": "Uniform"
+    },
+    {
+      "letter": "V",
+      "word": "Victor"
+    },
+    {
+      "letter": "W",
+      "word": "Whiskey"
+    },
+    {
+      "letter": "X",
+      "word": "X-ray"
+    },
+    {
+      "letter": "Y",
+      "word": "Yankee"
+    },
+    {
+      "letter": "Z",
+      "word": "Zulu"
+    }
+  ],
+  "examples": [
+    {
+      "title": "Announce yourself on a quiet repeater",
+      "lines": [
+        {
+          "speaker": "You",
+          "text": "[Your call sign] monitoring."
+        },
+        {
+          "speaker": "Another station",
+          "text": "[Your call sign], this is [other call sign]. Good afternoon."
+        },
+        {
+          "speaker": "You",
+          "text": "[Other call sign], this is [your call sign]. Thanks for coming back."
+        }
+      ]
+    },
+    {
+      "title": "Ask for a missing detail",
+      "lines": [
+        {
+          "speaker": "You",
+          "text": "I copied your call sign, but missed your name. Say again your name, please."
+        },
+        {
+          "speaker": "Other station",
+          "text": "My name is Kevin. I spell Kilo Echo Victor India November."
+        },
+        {
+          "speaker": "You",
+          "text": "Roger, Kevin. I copied that."
+        }
+      ]
+    },
+    {
+      "title": "Finish a contact and keep listening",
+      "lines": [
+        {
+          "speaker": "You",
+          "text": "Thanks for the QSO. Seventy-three, [your call sign] clear and listening."
+        }
+      ]
+    }
+  ],
+  "references": [
+    {
+      "title": "Repeater operating procedures",
+      "publisher": "Radio Amateurs of Canada (RAC)",
+      "url": "https://www.rac.ca/repeater-operation/"
+    },
+    {
+      "title": "Operating aids and Q signals",
+      "publisher": "American Radio Relay League (ARRL)",
+      "url": "https://www.arrl.org/operating-aids"
+    },
+    {
+      "title": "Voice procedures, phonetics and signal reports",
+      "publisher": "American Radio Relay League (ARRL)",
+      "url": "https://www.arrl.org/quick-reference-operating-aids"
+    },
+    {
+      "title": "Contesting terminology",
+      "publisher": "American Radio Relay League (ARRL)",
+      "url": "https://www.arrl.org/contest-glossary"
+    }
+  ]
+}

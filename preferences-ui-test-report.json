@@ -1,0 +1,24 @@
+{
+  "passed": 16,
+  "checks": [
+    "Settings offers one available-voice list, one preview and eight themes, with no sex selection",
+    "The speech slider shows a live value, saves on release, and previews each selected voice at that speed",
+    "Preview captures the live speed without waiting for a slider change event or altering saved preferences",
+    "Preview and Stop share one button without moving or losing keyboard focus; pause, end, errors and cancellation restore Preview",
+    "Refresh is hidden initially, appears only for voice edits or phone settings, and hides immediately when clicked",
+    "The highlighted Refresh button is readable and distinct in all eight themes; Preview and Stop occupy identical rectangles at phone and tablet sizes",
+    "Every theme applies immediately and gives readable body, secondary and button text",
+    "A failed settings write rolls back the theme and retains the last saved profile choices",
+    "Voice and theme choices survive a locked reload; a second profile keeps independent settings",
+    "Read lesson uses the saved voice and speed while leaving lesson text and highlights untouched",
+    "Pause, resume and stop ignore stale engine completions and never continue a cancelled passage",
+    "Long lessons advance through bounded chunks and exclude unrelated hidden text, collapsed details and button labels",
+    "Navigation and signing out stop narration; another profile cannot inherit pending speech",
+    "Unavailable saved voices are explained and retained until another available voice is chosen",
+    "Settings and reading controls fit small phones, landscape and tablets in light and dark themes",
+    "No JavaScript errors."
+  ],
+  "errors": [],
+  "physical_audio_tested": false,
+  "time": "2026-10-30T10:47:07.048Z"
+}

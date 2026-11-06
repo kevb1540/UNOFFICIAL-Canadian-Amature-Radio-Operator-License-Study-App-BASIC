@@ -1,0 +1,27 @@
+{
+  "passed": 18,
+  "checks": [
+    "The spoken-word highlight follows real native timing callbacks and leaves lesson HTML unchanged",
+    "Speech offsets map across inline markup, whitespace, symbols and decimal values",
+    "Repeated words are highlighted at their own DOM positions rather than the first text match",
+    "Saved highlights coexist with the temporary cursor, retain their anchors and are the only marks stored in backups",
+    "the spoken word is red with a transparent background and saved-highlight edits keep narration anchored",
+    "Long-press selection offers Read from here and jumps ongoing narration to the selected occurrence",
+    "The native selection-menu bridge can start from an inline word while preserving normal saved highlights",
+    "Pause clears the transient mark, resume starts at the current word, and stop removes all speech cursor state",
+    "Paused selection resumes from the exact repeated word through floating Play after selection dismissal",
+    "Saving a new highlight while paused keeps the latest selected word for inline Resume",
+    "Voices without word timing read full passages continuously without a misleading word cursor",
+    "Phrase-only timing keeps the original utterance playing and precise later timing still highlights words",
+    "Browser speech boundary events also highlight the exact word and stale callbacks are harmless after cancellation",
+    "Read from here is unavailable outside readable lessons and while a glossary dialog is open",
+    "Speech highlighting and the selection menu fit phones and use red text without a background in light/dark themes",
+    "the older-WebView overlay draws only red glyphs with no background boxes while preserving inline fonts and source text",
+    "Signing out clears the spoken word and pending selection; callbacks cannot affect another profile",
+    "No JavaScript errors."
+  ],
+  "errors": [],
+  "physical_audio_tested": false,
+  "native_selection_menu": "Callback compiled and bridge exercised; physical long press needs a device check",
+  "time": "2026-10-30T10:47:12.616Z"
+}
