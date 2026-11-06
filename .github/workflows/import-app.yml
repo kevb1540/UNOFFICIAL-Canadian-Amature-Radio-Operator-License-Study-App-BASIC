@@ -25,3 +25,5 @@ jobs:
             git commit -m 'Import complete Canadian Amateur Radio Study Guide source'
             git push origin HEAD:main
           fi
+
+# Import requested for main branch on 2026-11-06
