@@ -7,25 +7,21 @@ on:
 permissions:
   contents: write
 jobs:
-  import-and-build:
+  import:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
         with:
           persist-credentials: true
-      - name: Fetch complete app source
+      - name: Import complete source from original repository
         run: |
           git clone --depth 1 https://github.com/kevb1540/canadian_amateur_radio_guide.git /tmp/radio-source
           test -f /tmp/radio-source/app/build.gradle
-          cp -a /tmp/radio-source/. ./
-          rm -rf .git
-          git init
-          git branch -M main
-          git remote add origin https://github.com/${{ github.repository }}.git
+          rsync -a --exclude='.git' --exclude='.github/workflows/import-app.yml' /tmp/radio-source/ ./
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
           git add -A
-          git commit -m 'Import complete Canadian Radio Study Guide v2.3.45'
-          git -c http.extraheader="AUTHORIZATION: basic $(printf 'x-access-token:%s' "$GH_TOKEN" | base64 -w0)" push --force origin main
-        env:
-          GH_TOKEN: ${{ github.token }}
+          if ! git diff --cached --quiet; then
+            git commit -m 'Import complete Canadian Amateur Radio Study Guide source'
+            git push origin HEAD:main
+          fi
