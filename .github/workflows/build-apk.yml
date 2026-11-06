@@ -30,9 +30,11 @@ jobs:
         if: env.HAS_RELEASE_KEY == 'true'
         env:
           KEYSTORE_B64: ${{ secrets.RADIO_RELEASE_KEYSTORE_BASE64 }}
+          RADIO_RELEASE_STORE_PASSWORD: ${{ secrets.RADIO_RELEASE_STORE_PASSWORD }}
         run: |
           mkdir -p android_development
-          printf '%s' "$KEYSTORE_B64" | base64 --decode > android_development/release.keystore
+          printf '%s' "$KEYSTORE_B64" | tr -d '[:space:]' | base64 --decode > android_development/release.keystore
+          keytool -list -keystore android_development/release.keystore -storepass "$RADIO_RELEASE_STORE_PASSWORD" >/dev/null
       - name: Build signed release APK
         if: env.HAS_RELEASE_KEY == 'true'
         env:
@@ -47,7 +49,7 @@ jobs:
         if: env.HAS_RELEASE_KEY == 'true'
         uses: actions/upload-artifact@v4
         with:
-          name: Canadian-Amateur-Radio-Study-Guide-v2.3.47-release-APK
+          name: Canadian-Amateur-Radio-Study-Guide-v2.3.50-release-APK
           path: app/build/outputs/apk/release/*.apk
           if-no-files-found: error
           retention-days: 90
@@ -62,7 +64,7 @@ jobs:
       - name: Upload APK
         uses: actions/upload-artifact@v4
         with:
-          name: Canadian-Amateur-Radio-Study-Guide-v2.3.47-debug-APK
+          name: Canadian-Amateur-Radio-Study-Guide-v2.3.50-debug-APK
           path: app/build/outputs/apk/debug/*.apk
           if-no-files-found: error
           retention-days: 30
